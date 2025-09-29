@@ -6,6 +6,7 @@ import Image from "next/image"
 import { Menu, X, Sparkles, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -79,6 +80,34 @@ export default function Navbar() {
             ))}
           </div>
 
+          {/* Social Media Links */}
+          <div className="hidden lg:flex items-center space-x-4">
+            <Link
+              href="https://www.facebook.com/profile.php?id=100063770191373"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center w-10 h-10 rounded-full bg-spa-pink-600/20 hover:bg-spa-pink-600 transition-all duration-300 transform hover:scale-110"
+            >
+              <FaFacebookF className="w-4 h-4 text-spa-white group-hover:text-white transition-colors duration-300" />
+            </Link>
+            <Link
+              href="https://www.instagram.com/stylebeyouti?igsh=bDV3OXUzeDM4OGJo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center w-10 h-10 rounded-full bg-spa-pink-600/20 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 transition-all duration-300 transform hover:scale-110"
+            >
+              <FaInstagram className="w-4 h-4 text-spa-white group-hover:text-white transition-colors duration-300" />
+            </Link>
+            <Link
+              href="https://www.tiktok.com/@styleandbeyoutizone?_t=ZS-8zpTdpasMcC&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center w-10 h-10 rounded-full bg-spa-pink-600/20 hover:bg-black transition-all duration-300 transform hover:scale-110"
+            >
+              <FaTiktok className="w-4 h-4 text-spa-white group-hover:text-white transition-colors duration-300" />
+            </Link>
+          </div>
+
           {/* Book Now Button, Theme Toggle & Mobile Menu Button */}
           <div className="flex items-center space-x-3">
             <ThemeToggle />
@@ -119,6 +148,38 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
+              
+              {/* Mobile Social Media Links */}
+              <div className="flex items-center justify-center space-x-6 py-4 border-t border-spa-pink-800">
+                <Link
+                  href="https://www.facebook.com/profile.php?id=100063770191373"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-center w-12 h-12 rounded-full bg-spa-pink-600/20 hover:bg-spa-pink-600 transition-all duration-300 transform hover:scale-110"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <FaFacebookF className="w-5 h-5 text-spa-white group-hover:text-white transition-colors duration-300" />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/stylebeyouti?igsh=bDV3OXUzeDM4OGJo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-center w-12 h-12 rounded-full bg-spa-pink-600/20 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 transition-all duration-300 transform hover:scale-110"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <FaInstagram className="w-5 h-5 text-spa-white group-hover:text-white transition-colors duration-300" />
+                </Link>
+                <Link
+                  href="https://www.tiktok.com/@styleandbeyoutizone?_t=ZS-8zpTdpasMcC&_r=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-center w-12 h-12 rounded-full bg-spa-pink-600/20 hover:bg-black transition-all duration-300 transform hover:scale-110"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <FaTiktok className="w-5 h-5 text-spa-white group-hover:text-white transition-colors duration-300" />
+                </Link>
+              </div>
+              
               <div className="pt-4 border-t border-spa-pink-800">
                 <Button 
                   asChild
