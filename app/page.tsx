@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Sparkles, Heart, Shield, DollarSign, Star, Phone, MessageCircle } from 'lucide-react'
+import { Sparkles, Heart, Shield, DollarSign, Star, Phone, MessageCircle, Clock } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -24,22 +24,37 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const featuredServices = [
     {
-      title: "Full Body Massage",
-      description: "Experience deep relaxation with our professional massage therapy in your own space.",
+      title: "Signature Massage",
+      description: "Our signature full-body massage combining Swedish and deep tissue techniques for ultimate relaxation.",
+      price: "R350",
+      duration: "90 min",
+      rating: 4.9,
+      features: ["Swedish Technique", "Deep Tissue", "Aromatherapy", "Hot Stones"],
       icon: "💆‍♀️",
-      image: "/spa1.jpeg",
+      image: "/hero-main.jpeg",
+      whatsappMessage: "Hi! I'd like to book a Signature Massage (90 min - R350). When is your next availability?"
     },
     {
-      title: "Luxury Facials",
-      description: "Rejuvenate your skin with our customized facial treatments using premium products.",
+      title: "Luxury Facial",
+      description: "Premium anti-aging facial treatment with organic products and advanced skin rejuvenation techniques.",
+      price: "R280",
+      duration: "75 min",
+      rating: 4.8,
+      features: ["Anti-aging", "Organic Products", "LED Therapy", "Hydration"],
       icon: "✨",
-      image: "/dayspa2.jpeg",
+      image: "/spa1.jpeg",
+      whatsappMessage: "Hi! I'd like to book a Luxury Facial (75 min - R280). When is your next availability?"
     },
     {
-      title: "At-Home Spa Packages",
-      description: "Complete spa experience delivered to your doorstep for ultimate convenience.",
+      title: "Aromatherapy Session",
+      description: "Therapeutic aromatherapy massage with essential oils to reduce stress and promote healing.",
+      price: "R250",
+      duration: "60 min",
+      rating: 4.7,
+      features: ["Essential Oils", "Stress Relief", "Therapeutic", "Calming"],
       icon: "🏠",
-      image: "/day-spa.jpeg",
+      image: "/dayspa2.jpeg",
+      whatsappMessage: "Hi! I'd like to book an Aromatherapy Session (60 min - R250). When is your next availability?"
     },
   ]
 
@@ -176,7 +191,7 @@ export default function HomePage() {
             {featuredServices.map((service, index) => (
               <Card 
                 key={index}
-                className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 animate-fadeIn"
+                className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 animate-fadeIn hover:scale-105 hover:-translate-y-2"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <div className="relative h-48 overflow-hidden">
@@ -187,23 +202,69 @@ export default function HomePage() {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
-                  <div className="absolute top-4 right-4 text-3xl">
+                  
+                  {/* Price Badge */}
+                  <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 text-white px-3 py-1 rounded-full font-bold shadow-lg">
+                    {service.price}
+                  </div>
+                  
+                  {/* Duration Badge */}
+                  <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2">
+                    <Clock className="w-4 h-4" />
+                    <span className="text-sm font-medium">{service.duration}</span>
+                  </div>
+
+                  {/* Icon */}
+                  <div className="absolute bottom-4 left-4 text-3xl z-10">
                     {service.icon}
                   </div>
                 </div>
+                
                 <CardContent className="p-6">
-                  <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3">
+                  {/* Rating */}
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="flex items-center">
+                      {[...Array(5)].map((_, i) => (
+                        <Star 
+                          key={i}
+                          className={`w-4 h-4 ${i < Math.floor(service.rating) ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                        />
+                      ))}
+                    </div>
+                    <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">({service.rating})</span>
+                  </div>
+
+                  <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
                     {service.title}
                   </h3>
-                  <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-6">
+                  
+                  <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
                     {service.description}
                   </p>
+
+                  {/* Features */}
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {service.features.map((feature, featureIndex) => (
+                      <span 
+                        key={featureIndex}
+                        className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium"
+                      >
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Booking Button */}
                   <Button 
                     asChild
-                    className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300"
+                    className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
                   >
-                    <Link href="/services">
-                      Learn More
+                    <Link 
+                      href={`https://wa.me/27123456789?text=${encodeURIComponent(service.whatsappMessage)}`}
+                      className="flex items-center justify-center gap-2"
+                    >
+                      <MessageCircle className="w-5 h-5" />
+                      Book via WhatsApp
                     </Link>
                   </Button>
                 </CardContent>
