@@ -24,6 +24,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
+    { name: "Kids", href: "/kids" },
     { name: "Gallery", href: "/gallery" },
     { name: "Testimonials", href: "/testimonials" },
     { name: "Contact", href: "/contact" },
@@ -37,12 +38,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <div className="relative w-28 h-28 group-hover:scale-110 transition-all duration-700 ease-out">
+            <div className="relative w-16 h-16 group-hover:scale-110 transition-all duration-700 ease-out">
               <Image
-                src="/main-logo.png"
+                src="/the-logo.jpeg"
                 alt="Style & Beyouti Zone Spa Logo"
                 fill
-                sizes="(max-width: 768px) 112px, 112px"
+                sizes="(max-width: 768px) 64px, 64px"
                 quality={100}
                 className="object-contain drop-shadow-2xl filter brightness-110 contrast-110 saturate-110 hue-rotate-0 transition-all duration-500 group-hover:brightness-125 group-hover:contrast-115 group-hover:saturate-125 group-hover:drop-shadow-[0_0_25px_rgba(236,72,153,0.6)]"
                 priority

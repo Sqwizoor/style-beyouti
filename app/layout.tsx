@@ -28,7 +28,7 @@ export const metadata = {
   description:
     "Experience luxury spa treatments in the comfort of your own space. Style & Beyouti Zone Spa offers personal, private, and affordable relaxation services. Book your at-home spa session today!",
   keywords:
-    "spa services, at-home spa, massage therapy, facials, relaxation treatments, affordable spa, private spa, mobile spa, aromatherapy, personal spa treatments, Kumarie",
+    "spa services, at-home spa, massage therapy, facials, relaxation treatments, affordable spa, private spa, mobile spa, aromatherapy, personal spa treatments",
   openGraph: {
     title: "Style & Beyouti Zone Spa | Personal • Private • Affordable • Relaxing",
     description:
@@ -56,6 +56,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${poppins.variable} ${playfair.variable} ${lora.variable}`}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      </head>
       <body className={`${poppins.className} bg-spa-white text-spa-black`}>
         <ThemeProvider defaultTheme="light">
           <Navbar />

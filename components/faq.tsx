@@ -40,7 +40,7 @@ export default function Faq() {
     {
       question: "What areas do you serve?",
       answer:
-        "We provide construction services throughout the metropolitan area and surrounding regions. For specific location coverage or projects outside our standard service area, please contact us to discuss your needs. We're always willing to work with clients on special arrangements for larger projects.",
+        "We provide mobile spa services throughout Johannesburg South. Our experienced therapists bring professional spa treatments directly to your home or preferred location within this area. For specific location coverage or appointments outside our standard service area, please contact us to discuss your needs.",
     },
   ]
 

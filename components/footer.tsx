@@ -9,6 +9,7 @@ export default function Footer() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
+    { name: "Kids Services", href: "/kids" },
     { name: "Gallery", href: "/gallery" },
   ]
 
@@ -20,12 +21,7 @@ export default function Footer() {
   ]
 
   const serviceAreas = [
-    "Johannesburg Central",
-    "Sandton & Surrounds", 
-    "Pretoria Areas",
-    "East Rand",
-    "West Rand",
-    "Midrand & Centurion"
+    "Johannesburg South"
   ]
 
   return (
@@ -39,7 +35,7 @@ export default function Footer() {
             <div className="flex items-center space-x-3 mb-6">
               <div className="relative w-12 h-12">
                 <Image
-                  src="/pink-logo.png"
+                  src="/the-logo.jpeg"
                   alt="Style & Beyouti Zone Spa Logo"
                   fill
                   className="object-contain drop-shadow-lg"
@@ -47,7 +43,7 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="font-playfair font-bold text-xl text-spa-black dark:text-spa-white">
-                  Style & Beyouti Zone
+                  Style & Beyouti Zone Spa
                 </h3>
                 <p className="font-poppins text-sm text-spa-pink-600 dark:text-spa-pink-400">
                   Spa
@@ -122,7 +118,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="font-poppins font-medium text-spa-black dark:text-spa-white">
-                    Call Kumarie
+                    Call Us
                   </p>
                   <Link
                     href="tel:0617747378"

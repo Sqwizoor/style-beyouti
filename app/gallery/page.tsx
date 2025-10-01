@@ -255,7 +255,7 @@ export default function GalleryPage() {
             </h2>
             <p className="font-lora text-xl text-spa-white/90 mb-10 max-w-2xl mx-auto">
               Ready to experience the relaxation and beauty you see in our gallery? 
-              Book your personalized spa session with Kumarie today.
+              Book your personalized spa session with us today.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

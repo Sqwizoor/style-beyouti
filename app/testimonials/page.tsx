@@ -9,8 +9,8 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: "Client Testimonials - Style & Beyouti Zone Spa | Real Reviews",
-  description: "Read genuine testimonials from satisfied clients who experienced Kumarie's exceptional spa services. Discover why Style & Beyouti Zone Spa is trusted for mobile wellness treatments.",
-  keywords: "spa testimonials, client reviews, spa feedback, mobile spa reviews, Kumarie spa reviews, satisfied customers, wellness testimonials",
+  description: "Read genuine testimonials from satisfied clients who experienced our exceptional spa services. Discover why Style & Beyouti Zone Spa is trusted for mobile wellness treatments.",
+  keywords: "spa testimonials, client reviews, spa feedback, mobile spa reviews, Style & Beyouti Zone Spa reviews, satisfied customers, wellness testimonials",
 }
 
 const testimonials = [
@@ -19,7 +19,7 @@ const testimonials = [
     location: "Sandton",
     service: "Full Body Massage & Facial",
     rating: 5,
-    text: "Kumarie's mobile spa service exceeded all my expectations! She transformed my living room into a serene spa oasis. The massage was absolutely divine, and the facial left my skin glowing. I felt completely renewed and relaxed. This is luxury at its finest!",
+    text: "Style & Beyouti Zone Spa's mobile service exceeded all my expectations! They transformed my living room into a serene spa oasis. The massage was absolutely divine, and the facial left my skin glowing. I felt completely renewed and relaxed. This is luxury at its finest!",
     image: "/dayspa3.jpeg",
     date: "2 weeks ago"
   },
@@ -28,7 +28,7 @@ const testimonials = [
     location: "Johannesburg Central",
     service: "Hot Stone Massage",
     rating: 5,
-    text: "I've been to many spas, but nothing compares to the personalized attention Kumarie provides. The hot stone massage was incredible - she knew exactly where I carried tension. The convenience of having this service at home is unmatched. Highly recommend!",
+    text: "I've been to many spas, but nothing compares to the personalized attention Style & Beyouti Zone Spa provides. The hot stone massage was incredible - they knew exactly where I carried tension. The convenience of having this service at home is unmatched. Highly recommend!",
     image: "/spa1.jpeg",
     date: "1 month ago"
   },
@@ -37,7 +37,7 @@ const testimonials = [
     location: "Pretoria",
     service: "Wellness Package",
     rating: 5,
-    text: "Kumarie is a true professional with a gift for healing. Her wellness package was exactly what I needed after a stressful month. The aromatherapy, massage, and reflexology combination left me feeling like a new person. Thank you for bringing peace to my home!",
+    text: "Style & Beyouti Zone Spa team are true professionals with a gift for healing. Their wellness package was exactly what I needed after a stressful month. The aromatherapy, massage, and reflexology combination left me feeling like a new person. Thank you for bringing peace to my home!",
     image: "/dayspa5.jpeg",
     date: "3 weeks ago"
   },
@@ -46,7 +46,7 @@ const testimonials = [
     location: "Midrand",
     service: "Couples Massage",
     rating: 5,
-    text: "My husband and I booked a couples massage for our anniversary, and it was magical! Kumarie created such a romantic and relaxing atmosphere. We both felt so connected and relaxed afterward. This will definitely become our monthly tradition!",
+    text: "My husband and I booked a couples massage for our anniversary, and it was magical! Style & Beyouti Zone Spa created such a romantic and relaxing atmosphere. We both felt so connected and relaxed afterward. This will definitely become our monthly tradition!",
     image: "/dayspa6.jpeg",
     date: "2 months ago"
   },
@@ -55,7 +55,7 @@ const testimonials = [
     location: "Centurion",
     service: "Deep Tissue Massage",
     rating: 5,
-    text: "As a busy working mom, I rarely have time for self-care. Kumarie's mobile service was a blessing! The deep tissue massage helped with my chronic back pain, and I didn't have to leave my house. Professional, skilled, and so convenient!",
+    text: "As a busy working mom, I rarely have time for self-care. Style & Beyouti Zone Spa's mobile service was a blessing! The deep tissue massage helped with my chronic back pain, and I didn't have to leave my house. Professional, skilled, and so convenient!",
     image: "/dayspa2.jpeg",
     date: "1 week ago"
   },
@@ -64,7 +64,7 @@ const testimonials = [
     location: "East Rand",
     service: "Luxury Facial & Manicure",
     rating: 5,
-    text: "Kumarie's attention to detail is incredible. The facial was customized for my sensitive skin, and the results were amazing. My hands have never looked better after the manicure. She uses high-quality products and has such gentle, healing hands.",
+    text: "Style & Beyouti Zone Spa's attention to detail is incredible. The facial was customized for my sensitive skin, and the results were amazing. My hands have never looked better after the manicure. They use high-quality products and have such gentle, healing hands.",
     image: "/dayspa4.jpeg",
     date: "3 weeks ago"
   }
@@ -234,9 +234,9 @@ export default function TestimonialsPage() {
                   </div>
                   
                   <blockquote className="font-lora text-2xl text-spa-black leading-relaxed mb-8">
-                    "Kumarie doesn't just provide spa services – she creates an entire wellness experience. 
-                    From the moment she arrives, you know you're in for something special. Her expertise, 
-                    professionalism, and genuine care for her clients shine through every treatment."
+                    "Style & Beyouti Zone Spa doesn't just provide spa services – they create an entire wellness experience. 
+                    From the moment they arrive, you know you're in for something special. Their expertise, 
+                    professionalism, and genuine care for clients shine through every treatment."
                   </blockquote>
                   
                   <div className="flex items-center justify-between">
@@ -321,7 +321,7 @@ export default function TestimonialsPage() {
               >
                 <Link href="tel:0617747378" className="flex items-center space-x-2">
                   <Phone className="w-5 h-5" />
-                  <span>Call Kumarie - 061 774 7378</span>
+                  <span>Call Us - 061 774 7378</span>
                 </Link>
               </Button>
               <Button 

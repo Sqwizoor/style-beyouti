@@ -90,33 +90,209 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Story Section */}
+      {/* Founder Story Section */}
       <section className="py-20 bg-spa-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-playfair font-bold text-4xl sm:text-5xl text-spa-black mb-8">
-            Our Story
-          </h2>
-          <div className="space-y-6 text-lg font-lora text-spa-beige-700 leading-relaxed">
-            <p>
-              Style & Beyouti Zone Spa was born from a simple belief: everyone deserves access to 
-              professional spa treatments without compromising on quality, privacy, or affordability.
-            </p>
-            <p>
-              We recognized that many people struggle to find time for self-care or feel uncomfortable 
-              in traditional spa settings. That's why we created a mobile spa service that brings the 
-              luxury spa experience directly to your doorstep.
-            </p>
-            <p>
-              Our journey began with Kumarie's passion for wellness and beauty. With years of experience 
-              in the spa industry, she understood the transformative power of professional treatments 
-              and wanted to make them accessible to everyone.
-            </p>
-            <p>
-              Today, we're proud to offer a range of personalized spa services that prioritize your 
-              comfort, privacy, and individual needs. Every treatment is an opportunity for you to 
-              reconnect with yourself and experience the rejuvenation you deserve.
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair font-bold text-4xl sm:text-5xl text-spa-black mb-8">
+              Meet Our Founder
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 mx-auto mb-8"></div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="relative">
+              <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/dayspa3.jpeg"
+                  alt="Founder of Style & Beyouti Zone Spa"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/20 to-transparent"></div>
+              </div>
+            </div>
+            
+            <div className="space-y-6">
+              <div className="space-y-4 text-lg font-lora text-spa-beige-700 leading-relaxed">
+                <p>
+                  Our passionate founder is the hands-on director of Style & Beyouti Zone Spa, 
+                  established in <strong className="text-spa-pink-600">July 2019</strong>. With a natural flair for beauty and a heart for wellness, 
+                  we have created a space where self-care is more than just a treatment — it's a lifestyle.
+                </p>
+                <p>
+                  Our journey into the beauty industry began with a deep love for enhancing natural beauty and a desire 
+                  to provide every client with a personalized, luxurious experience. Over our <strong className="text-spa-pink-600">5+ years</strong> in the industry, 
+                  we have mastered expertise in rejuvenating facials, relaxing massages, precision nail care, and tailored spa packages.
+                </p>
+                <p>
+                  Under our leadership, Style & Beyouti Zone Spa has become <strong className="text-spa-gold-600">Top 20 in Gauteng</strong>, 
+                  known for its welcoming atmosphere, meticulous attention to detail, and unwavering commitment to high-quality service.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-r from-spa-pink-50 to-spa-gold-50 p-6 rounded-xl border-l-4 border-spa-pink-400">
+                <blockquote className="font-lora text-xl text-spa-black italic mb-4">
+                  "Beauty starts the moment you decide to take care of yourself."
+                </blockquote>
+                <cite className="font-poppins font-semibold text-spa-pink-600">- Style & Beyouti Zone Spa</cite>
+              </div>
+            </div>
+          </div>
+
+          {/* Philosophy & Mission */}
+          <div className="space-y-12">
+            <div className="text-center">
+              <h3 className="font-playfair font-bold text-3xl text-spa-black mb-6">Our Philosophy</h3>
+              <div className="max-w-4xl mx-auto space-y-4 text-lg font-lora text-spa-beige-700 leading-relaxed">
+                <p>
+                  Our philosophy is simple: <strong className="text-spa-black">every client deserves to leave looking beautiful and feeling empowered</strong>. 
+                  Our vision is to provide an experience of total relaxation and rejuvenation to all generations.
+                </p>
+                <p>
+                  Our business caters for everyone - from busy moms to professional individuals, teens, and just about everyone 
+                  that appreciates the comfort of experiencing relaxation and a sense of peace. Whether it's an awesome Girl's day out 
+                  at the Spa or a solo retreat, everyone is welcome.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-spa-beige-50 p-8 rounded-2xl">
+              <h3 className="font-playfair font-bold text-3xl text-spa-black mb-6 text-center">Our Mission</h3>
+              <p className="text-xl font-lora text-spa-beige-700 text-center mb-8 leading-relaxed">
+                To offer <strong className="text-spa-pink-600">affordable treatments with the best possible results</strong> in a 
+                <strong className="text-spa-gold-600"> personal, private, and relaxing environment</strong>.
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-spa-pink-400 to-spa-pink-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Heart className="w-8 h-8 text-spa-white" />
+                  </div>
+                  <h4 className="font-poppins font-semibold text-spa-black">Personal</h4>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-spa-gold-400 to-spa-gold-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Shield className="w-8 h-8 text-spa-white" />
+                  </div>
+                  <h4 className="font-poppins font-semibold text-spa-black">Private</h4>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-spa-beige-400 to-spa-beige-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span className="text-spa-white font-bold text-lg">$</span>
+                  </div>
+                  <h4 className="font-poppins font-semibold text-spa-black">Affordable</h4>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-spa-pink-300 to-spa-gold-300 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Sparkles className="w-8 h-8 text-spa-white" />
+                  </div>
+                  <h4 className="font-poppins font-semibold text-spa-black">Relaxing</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Special Events Section */}
+      <section className="py-20 bg-gradient-to-b from-spa-beige-50 to-spa-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair font-bold text-4xl sm:text-5xl text-spa-black mb-6">
+              Memorable Events @ Style & Beyouti Zone Spa
+            </h2>
+            <p className="font-lora text-xl text-spa-beige-700 max-w-3xl mx-auto">
+              Create unforgettable moments with our specialized event packages
             </p>
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { title: "Birthdays", icon: "🎂", description: "Celebrate another year of beauty" },
+              { title: "Bridal Showers", icon: "👰", description: "Pamper the bride-to-be" },
+              { title: "Baby Showers", icon: "👶", description: "Relaxation for expecting mothers" },
+              { title: "Girls' Pamper Day", icon: "💅", description: "Ultimate friendship bonding" },
+              { title: "Special Occasions", icon: "🎉", description: "Any reason to celebrate you" },
+              { title: "Solo Retreat", icon: "🧘", description: "Personal time to unwind" }
+            ].map((event, index) => (
+              <Card key={index} className="group hover:shadow-xl transition-all duration-500 border-0 shadow-lg bg-gradient-to-br from-spa-white to-spa-pink-50">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl mb-4">{event.icon}</div>
+                  <h3 className="font-playfair font-semibold text-xl text-spa-black mb-2">{event.title}</h3>
+                  <p className="font-poppins text-spa-beige-600">{event.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Opening Hours Section */}
+      <section className="py-20 bg-spa-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-playfair font-bold text-4xl sm:text-5xl text-spa-black mb-6">
+              Opening Hours
+            </h2>
+            <p className="font-lora text-xl text-spa-beige-700">
+              Flexible scheduling to fit your lifestyle
+            </p>
+          </div>
+
+          <Card className="shadow-2xl border-0 bg-gradient-to-br from-spa-white to-spa-beige-50">
+            <CardContent className="p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between py-3 border-b border-spa-beige-200">
+                    <span className="font-poppins font-semibold text-spa-black">Monday</span>
+                    <span className="font-poppins text-spa-beige-600">9:00 AM - 6:00 PM</span>
+                  </div>
+                  <div className="flex items-center justify-between py-3 border-b border-spa-beige-200">
+                    <span className="font-poppins font-semibold text-spa-black">Tuesday</span>
+                    <span className="font-poppins text-spa-beige-600">9:00 AM - 6:00 PM</span>
+                  </div>
+                  <div className="flex items-center justify-between py-3 border-b border-spa-beige-200">
+                    <span className="font-poppins font-semibold text-spa-black">Wednesday</span>
+                    <span className="font-poppins text-spa-beige-600">9:00 AM - 6:00 PM</span>
+                  </div>
+                  <div className="flex items-center justify-between py-3 border-b border-spa-beige-200">
+                    <span className="font-poppins font-semibold text-spa-black">Thursday</span>
+                    <span className="font-poppins text-spa-beige-600">9:00 AM - 6:00 PM</span>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between py-3 border-b border-spa-beige-200">
+                    <span className="font-poppins font-semibold text-spa-black">Friday</span>
+                    <span className="font-poppins text-spa-beige-600">9:00 AM - 6:00 PM</span>
+                  </div>
+                  <div className="flex items-center justify-between py-3 border-b border-spa-beige-200">
+                    <span className="font-poppins font-semibold text-spa-black">Saturday</span>
+                    <span className="font-poppins text-spa-beige-600">8:00 AM - 5:00 PM</span>
+                  </div>
+                  <div className="flex items-center justify-between py-3 border-b border-spa-beige-200">
+                    <span className="font-poppins font-semibold text-spa-black">Sunday</span>
+                    <span className="font-poppins text-spa-beige-600">10:00 AM - 4:00 PM</span>
+                  </div>
+                  <div className="flex items-center justify-between py-3">
+                    <span className="font-poppins font-semibold text-spa-pink-600">Emergency/Special</span>
+                    <span className="font-poppins text-spa-pink-600">By Appointment</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-8 p-6 bg-gradient-to-r from-spa-pink-50 to-spa-gold-50 rounded-xl">
+                <div className="flex items-center justify-center mb-4">
+                  <Clock className="w-6 h-6 text-spa-pink-600 mr-2" />
+                  <h3 className="font-playfair font-semibold text-xl text-spa-black">Flexible Booking</h3>
+                </div>
+                <p className="font-poppins text-spa-beige-700 text-center">
+                  We understand life gets busy! Contact us for early morning, late evening, or weekend appointments 
+                  to fit your schedule. Your convenience is our priority.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 

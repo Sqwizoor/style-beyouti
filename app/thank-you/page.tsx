@@ -9,8 +9,8 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: "Thank You - Style & Beyouti Zone Spa | Your Wellness Journey Awaits",
-  description: "Thank you for choosing Style & Beyouti Zone Spa. Your journey to relaxation and wellness begins with Kumarie's personalized mobile spa services.",
-  keywords: "spa thank you, wellness journey, mobile spa booking, Kumarie spa services, relaxation experience",
+  description: "Thank you for choosing Style & Beyouti Zone Spa. Your journey to relaxation and wellness begins with our personalized mobile spa services.",
+  keywords: "spa thank you, wellness journey, mobile spa booking, Style & Beyouti Zone Spa services, relaxation experience",
 }
 
 const benefits = [
@@ -57,7 +57,7 @@ export default function ThankYouPage() {
               
               <p className="font-lora text-xl text-spa-beige-700 mb-8 leading-relaxed">
                 Your decision to prioritize self-care and wellness is truly admirable. 
-                We're honored that you've chosen Kumarie and our mobile spa services 
+                We're honored that you've chosen Style & Beyouti Zone Spa and our mobile spa services 
                 to be part of your relaxation journey.
               </p>
 
@@ -84,7 +84,7 @@ export default function ThankYouPage() {
                 >
                   <Link href="tel:0617747378" className="flex items-center space-x-2">
                     <Phone className="w-5 h-5" />
-                    <span>Call Kumarie</span>
+                    <span>Call Us</span>
                   </Link>
                 </Button>
                 <Button 
@@ -171,7 +171,7 @@ export default function ThankYouPage() {
             </div>
 
             <h2 className="font-playfair font-bold text-4xl sm:text-5xl text-spa-black mb-8">
-              From Kumarie's Heart to Yours
+              From Our Heart to Yours
             </h2>
             
             <Card className="shadow-2xl border-0 bg-gradient-to-br from-spa-white to-spa-pink-50">
@@ -190,7 +190,7 @@ export default function ThankYouPage() {
                 
                 <div className="border-t border-spa-beige-200 pt-6">
                   <p className="font-playfair font-semibold text-2xl text-spa-black mb-2">
-                    Kumarie
+                    Style & Beyouti Zone Spa Team
                   </p>
                   <p className="font-poppins text-spa-beige-600">
                     Founder & Lead Spa Therapist
@@ -227,7 +227,7 @@ export default function ThankYouPage() {
                   Call Directly
                 </h3>
                 <p className="font-poppins text-spa-beige-700 mb-6">
-                  Speak with Kumarie personally to discuss your preferences and schedule your session
+                  Speak with us personally to discuss your preferences and schedule your session
                 </p>
                 <p className="font-poppins font-bold text-2xl text-spa-black mb-6">
                   061 774 7378

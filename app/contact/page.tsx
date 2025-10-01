@@ -11,14 +11,14 @@ import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: "Contact Us - Style & Beyouti Zone Spa | Book Your Spa Session",
-  description: "Contact Kumarie at Style & Beyouti Zone Spa to book your personalized spa session. Call 061 774 7378 or WhatsApp for mobile spa services at your location.",
-  keywords: "contact spa, book spa appointment, mobile spa contact, spa booking, Kumarie spa services, at-home spa booking, spa consultation",
+  description: "Contact Style & Beyouti Zone Spa to book your personalized spa session. Call 061 774 7378 or WhatsApp for mobile spa services at your location.",
+  keywords: "contact spa, book spa appointment, mobile spa contact, spa booking, Style & Beyouti Zone Spa services, at-home spa booking, spa consultation",
 }
 
 const contactMethods = [
   {
     icon: Phone,
-    title: "Call Kumarie",
+    title: "Call Us",
     description: "Ready to book? Call directly for immediate assistance",
     action: "tel:0617747378",
     display: "061 774 7378",
@@ -66,7 +66,7 @@ export default function ContactPage() {
                 Get In Touch
               </h1>
               <p className="font-lora text-xl text-spa-beige-700 mb-8 leading-relaxed">
-                Ready to experience ultimate relaxation? Contact Kumarie to book your personalized 
+                Ready to experience ultimate relaxation? Contact us to book your personalized 
                 spa session and discover the luxury of at-home wellness treatments.
               </p>
               
@@ -75,7 +75,7 @@ export default function ContactPage() {
                   <div className="w-8 h-8 bg-gradient-to-br from-spa-pink-400 to-spa-gold-400 rounded-full flex items-center justify-center">
                     <Phone className="w-4 h-4 text-spa-white" />
                   </div>
-                  <span className="font-poppins text-spa-beige-700">Direct line to Kumarie</span>
+                  <span className="font-poppins text-spa-beige-700">Direct line to spa</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-gradient-to-br from-spa-pink-400 to-spa-gold-400 rounded-full flex items-center justify-center">
@@ -343,7 +343,7 @@ export default function ContactPage() {
               >
                 <Link href="tel:0617747378" className="flex items-center space-x-2">
                   <Phone className="w-5 h-5" />
-                  <span>Call Kumarie - 061 774 7378</span>
+                  <span>Call Us - 061 774 7378</span>
                 </Link>
               </Button>
             </div>
