@@ -243,12 +243,12 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-            {/* "Relax Together, Pay for One" Deal */}
+            {/* Kids Pamper */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/massage.jpeg"
-                  alt="Exclusive Deal for 2 People"
+                  src="/new-kids.jpeg"
+                  alt="Kids Pamper Package"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -257,20 +257,20 @@ export default function HomePage() {
                 {/* Special Deal Badge */}
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[90px]">
                   <div className="text-center">
-                    <div className="text-sm font-bold whitespace-nowrap">R550</div>
-                    <div className="text-xs whitespace-nowrap">FOR 2 PEOPLE</div>
+                    <div className="text-sm font-bold whitespace-nowrap">R350</div>
+                    <div className="text-xs whitespace-nowrap">PER CHILD</div>
                   </div>
                 </div>
                 
                 {/* Duration Badge */}
                 <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2">
                   <Clock className="w-4 h-4" />
-                  <span className="text-sm font-medium">50 mins total</span>
+                  <span className="text-sm font-medium">45 mins</span>
                 </div>
 
                 {/* Deal Icon */}
                 <div className="absolute bottom-4 left-4 text-3xl z-10">
-                  👥
+                  👧�
                 </div>
               </div>
               
@@ -289,34 +289,58 @@ export default function HomePage() {
                 </div>
 
                 <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
-                  "Relax Together, Pay for One" Deal
+                  Kids Pamper
                 </h3>
                 
                 <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
-                  An Exclusive Deal for 2 people. Pay for one person and the second person is absolutely free! 
-                  40 minutes of combined treatment time per person plus a free 10-minute foot massage.
+                  Hi I can accommodate you @R350 per child - Treatments 45mins
                 </p>
 
                 {/* Treatments Included */}
                 <div className="mb-4">
                   <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
-                    Treatments Included (For 2 People):
+                    Treatments Included:
                   </h4>
                   <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-1">
-                    <li>• 20 minutes Aromatherapy Neck, Back, and Shoulder Massage</li>
-                    <li>• 5 minutes Back Exfoliation</li>
-                    <li>• 5 minutes Indian Head Massage</li>
-                    <li>• <strong>PLUS</strong> Free 10 minutes Foot Massage</li>
+                    <li>• Back Neck and Shoulder Massage: 15mins</li>
+                    <li>• Express Pedicure: 15mins</li>
+                    <li>• Foot Soak 🦶</li>
+                    <li>• Foot Scrub 🦶</li>
+                    <li>• Buff and Shine</li>
+                    <li>• Foot massage 👌: 15mins</li>
+                    <li>• Nail polish painted on 👣and💅🏼</li>
                   </ul>
+                </div>
+
+                {/* Included Extras */}
+                <div className="mb-4 bg-spa-pink-50 dark:bg-spa-pink-900/20 rounded-lg p-3">
+                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
+                    Included:
+                  </h4>
+                  <p className="text-sm text-spa-beige-600 dark:text-spa-beige-400">
+                    • Welcome drinks 🥂<br/>
+                    • Gowns, slippers and headbands provided
+                  </p>
+                </div>
+
+                {/* Optional Add-ons */}
+                <div className="mb-4 bg-spa-gold-50 dark:bg-spa-gold-900/20 rounded-lg p-3">
+                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
+                    Optional Add-ons:
+                  </h4>
+                  <p className="text-sm text-spa-beige-600 dark:text-spa-beige-400">
+                    • Canvas painting 🎨🖼 (includes canvas and painting) - R250pc<br/>
+                    • Light Meals (Chicken wrap & Chips with soft drink) - R100pc
+                  </p>
                 </div>
 
                 {/* Features */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    Buy One Get One Free
+                    45 mins Treatment
                   </span>
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    40 mins + Free Foot Massage
+                    Gowns & Slippers Included
                   </span>
                 </div>
 
@@ -326,23 +350,23 @@ export default function HomePage() {
                   className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
                 >
                   <Link 
-                    href="https://wa.me/27617747378?text=Hi! I'm interested in the 'Relax Together, Pay for One' Deal (R550 for 2 people). When is your next availability?"
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Kids Pamper package (R350 per child for 45mins). Please let me know about availability and optional add-ons."
                     target="_blank"
                     className="flex items-center justify-center gap-2"
                   >
                     <MessageCircle className="w-5 h-5" />
-                    Book This Deal
+                    Book Kids Pamper
                   </Link>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* The "Love Package" Couples Pamper Package */}
+            {/* Couples Combo for 2 people */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/couple.jpeg"
-                  alt="Love Package Couples Pamper"
+                  src="/service.png"
+                  alt="Couples Combo for 2 people"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -351,8 +375,8 @@ export default function HomePage() {
                 {/* Price Badge */}
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[80px]">
                   <div className="text-center">
-                    <div className="text-sm font-bold whitespace-nowrap">R1,950</div>
-                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R2,500</div>
+                    <div className="text-sm font-bold whitespace-nowrap">R650</div>
+                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R900</div>
                   </div>
                 </div>
                 
@@ -383,12 +407,11 @@ export default function HomePage() {
                 </div>
 
                 <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
-                  The "Love Package" Couples Pamper Package
+                  Couples Combo for 2 people
                 </h3>
                 
                 <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
-                  4 hours of pure luxury for 2 people (valued at R2,500). The ultimate romantic couples experience 
-                  with 5 comprehensive treatments.
+                  Personal, Private, Affordable and very Relaxing Environment with an Amazing Service @ your doorstep 💯👌Only @ Style and Beyouti Zone Day Spa
                 </p>
 
                 {/* Treatments Included */}
@@ -410,10 +433,10 @@ export default function HomePage() {
                 {/* Features */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    Save R550
+                    Save R250
                   </span>
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    5 Treatments
+                    For 2 People
                   </span>
                 </div>
 
@@ -423,23 +446,23 @@ export default function HomePage() {
                   className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
                 >
                   <Link 
-                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Love Package Couples Pamper Package (R1,950 for 4 hours). When is your next availability?"
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Couples Combo for 2 people (R650). When is your next availability?"
                     target="_blank"
                     className="flex items-center justify-center gap-2"
                   >
                     <MessageCircle className="w-5 h-5" />
-                    Book Love Package
+                    Book Couples Combo
                   </Link>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* The "90 Minute" Massage Combo */}
+            {/* Massage Treatments 60mins */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/outdoor.jpeg"
-                  alt="90 Minute Massage Combo"
+                  src="/service2.png"
+                  alt="Massage Treatments 60mins"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -448,15 +471,15 @@ export default function HomePage() {
                 {/* Price Badge */}
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[70px]">
                   <div className="text-center">
-                    <div className="text-sm font-bold whitespace-nowrap">R550</div>
-                    <div className="text-xs whitespace-nowrap">ONLY</div>
+                    <div className="text-sm font-bold whitespace-nowrap">R300</div>
+                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R400</div>
                   </div>
                 </div>
                 
                 {/* Duration Badge */}
                 <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2">
                   <Clock className="w-4 h-4" />
-                  <span className="text-sm font-medium">90 minutes</span>
+                  <span className="text-sm font-medium">60 minutes</span>
                 </div>
 
                 {/* Massage Icon */}
@@ -480,32 +503,27 @@ export default function HomePage() {
                 </div>
 
                 <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
-                  The "90 Minute" Massage Combo
+                  Massage Treatments 60mins
                 </h3>
                 
                 <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
-                  90 minutes of pure relaxation at an amazing value. Perfect for those who want to indulge in multiple treatments.
+                  Massage is not just a luxury. It's a way to a healthier, happier life. 💆‍♂️🥂💆‍♀️🌸
                 </p>
 
-                {/* Treatments Included */}
+                {/* Mission Statement */}
                 <div className="mb-4">
-                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
-                    Treatments Included:
-                  </h4>
-                  <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-1">
-                    <li>• Full Body Massage: 60 minutes</li>
-                    <li>• Indian Head Massage: 15 minutes</li>
-                    <li>• Half Back Exfoliation: 15 minutes</li>
-                  </ul>
+                  <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 text-sm leading-relaxed">
+                    Results is our passion. Our mission is to offer affordable treatments with the best possible results.
+                  </p>
                 </div>
 
                 {/* Features */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    Great Value
+                    Save R100
                   </span>
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    3 Treatments
+                    60 Minutes
                   </span>
                 </div>
 
@@ -515,23 +533,23 @@ export default function HomePage() {
                   className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
                 >
                   <Link 
-                    href="https://wa.me/27617747378?text=Hi! I'm interested in the 90 Minute Massage Combo (R550). When is your next availability?"
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Massage Treatments 60mins (R300). When is your next availability?"
                     target="_blank"
                     className="flex items-center justify-center gap-2"
                   >
                     <MessageCircle className="w-5 h-5" />
-                    Book 90 Min Combo
+                    Book Massage Treatment
                   </Link>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* The "2 Hour, 5 Treatments" Deal */}
+            {/* Just for you @ R500pp Only */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/massage-bed.jpeg"
-                  alt="2 Hour 5 Treatments Deal"
+                  src="/service3.png"
+                  alt="Just for you Special Package"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -540,20 +558,20 @@ export default function HomePage() {
                 {/* Price Badge */}
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[70px]">
                   <div className="text-center">
-                    <div className="text-sm font-bold whitespace-nowrap">R650</div>
-                    <div className="text-xs whitespace-nowrap">ONLY</div>
+                    <div className="text-sm font-bold whitespace-nowrap">R500</div>
+                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R650</div>
                   </div>
                 </div>
                 
                 {/* Duration Badge */}
                 <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2">
                   <Clock className="w-4 h-4" />
-                  <span className="text-sm font-medium">2 hours</span>
+                  <span className="text-sm font-medium">1 hour</span>
                 </div>
 
-                {/* Spa House Icon */}
+                {/* Special Icon */}
                 <div className="absolute bottom-4 left-4 text-3xl z-10">
-                  🏡
+                  💆‍♀️
                 </div>
               </div>
               
@@ -572,34 +590,32 @@ export default function HomePage() {
                 </div>
 
                 <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
-                  The "2 Hour, 5 Treatments" Deal (Spa House)
+                  Just for you @ R500pp Only
                 </h3>
                 
+                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed font-semibold">
+                  **Our Special Just for You!**
+                </p>
+                
                 <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
-                  2 hours of blissful treatments at our Spa House location. Five comprehensive treatments for ultimate relaxation.
+                  Get a Full Body Hotstone Massage PLUS a Back Exfoliation PLUS a Head Massage for 1hour 👌💯
                 </p>
 
-                {/* Treatments Included */}
-                <div className="mb-4">
-                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
-                    5 Treatments Included:
-                  </h4>
-                  <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-1">
-                    <li>• 60 minutes Aroma Massage</li>
-                    <li>• 15 minutes Back Exfoliation</li>
-                    <li>• 5 minutes Indian Head Massage</li>
-                    <li>• 30 minutes Express Pedicure</li>
-                    <li>• Half Leg Glow Exfoliation</li>
-                  </ul>
+                {/* Includes */}
+                <div className="mb-4 bg-spa-gold-50 dark:bg-spa-gold-900/20 rounded-lg p-3">
+                  <p className="font-poppins text-spa-beige-700 dark:text-spa-beige-300 text-sm font-medium">
+                    Includes a Yummy Snack Platter with a Drink🍹<br/>
+                    For Only R500pp💥
+                  </p>
                 </div>
 
                 {/* Features */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    5 Treatments
+                    Save R150
                   </span>
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    Spa House Location
+                    Includes Snacks & Drink
                   </span>
                 </div>
 
@@ -609,23 +625,23 @@ export default function HomePage() {
                   className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
                 >
                   <Link 
-                    href="https://wa.me/27617747378?text=Hi! I'm interested in the 2 Hour, 5 Treatments Deal at your Spa House (R650). When is your next availability?"
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Just for you @ R500pp package with Hotstone Massage, Back Exfoliation, Head Massage, plus Snack Platter and Drink. When is your next availability?"
                     target="_blank"
                     className="flex items-center justify-center gap-2"
                   >
                     <MessageCircle className="w-5 h-5" />
-                    Book Spa House Deal
+                    Book Just For You
                   </Link>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* The "Spa Retreat B & B" Package */}
+            {/* Amazing Instant Glow Facial */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/dayspa3.jpeg"
-                  alt="Spa Retreat B & B Package"
+                  src="/service4.png"
+                  alt="Amazing Instant Glow Facial"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -634,25 +650,20 @@ export default function HomePage() {
                 {/* Price Badge with Special Offer */}
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[85px]">
                   <div className="text-center">
-                    <div className="text-sm font-bold whitespace-nowrap">R400</div>
-                    <div className="text-xs whitespace-nowrap">per person</div>
+                    <div className="text-sm font-bold whitespace-nowrap">R200</div>
+                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R350</div>
                   </div>
-                </div>
-                
-                {/* Special Offer Badge */}
-                <div className="absolute top-16 right-4 bg-spa-gold-500 text-white px-2 py-1 rounded-full text-xs font-bold">
-                  30% OFF
                 </div>
                 
                 {/* Duration Badge */}
                 <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2">
                   <Clock className="w-4 h-4" />
-                  <span className="text-sm font-medium">1 hour</span>
+                  <span className="text-sm font-medium">30 minutes</span>
                 </div>
 
-                {/* B&B Icon */}
+                {/* Facial Icon */}
                 <div className="absolute bottom-4 left-4 text-3xl z-10">
-                  🏨
+                  ✨
                 </div>
               </div>
               
@@ -671,36 +682,31 @@ export default function HomePage() {
                 </div>
 
                 <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
-                  The "Spa Retreat B & B" Package
+                  Amazing Instant Glow Facial 👌
                 </h3>
                 
                 <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
-                  Perfect for a quick retreat experience. 1 hour of pampering with 5 essential treatments. 
-                  <strong className="text-spa-pink-600 dark:text-spa-pink-400"> Special 30% discount available!</strong>
+                  Instant Glow Facial leaving your skin soft refreshed and Glowing 30mins👌💯
+                </p>
+                
+                <p className="font-poppins text-spa-beige-700 dark:text-spa-beige-300 mb-4 leading-relaxed font-medium">
+                  Full Facial @ R200
                 </p>
 
-                {/* Treatments Included */}
-                <div className="mb-4">
-                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
-                    5 Treatments Included:
-                  </h4>
-                  <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-1">
-                    <li>• Back, Neck & Shoulder Massage: 20 minutes</li>
-                    <li>• Indian Head Massage: 5 minutes</li>
-                    <li>• Back Exfoliation: 5 minutes</li>
-                    <li>• Express Pedicure: 20 minutes</li>
-                    <li>• Leg Glow Exfoliation: 10 minutes</li>
-                    <li>• Optional: Nail Polish painted on toes for Ladies</li>
-                  </ul>
+                {/* Bonus */}
+                <div className="mb-4 bg-spa-pink-50 dark:bg-spa-pink-900/20 rounded-lg p-3">
+                  <p className="font-poppins text-spa-pink-700 dark:text-spa-pink-300 text-sm font-medium">
+                    👣Plus a Free 10mins Foot Massage
+                  </p>
                 </div>
 
                 {/* Features */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-gold-100 to-spa-pink-100 dark:from-spa-gold-900/30 dark:to-spa-pink-900/30 text-spa-gold-600 dark:text-spa-gold-400 rounded-full text-xs font-medium">
-                    30% Off Available
+                    Save R150
                   </span>
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    Quick Retreat
+                    Free Foot Massage
                   </span>
                 </div>
 
@@ -710,12 +716,12 @@ export default function HomePage() {
                   className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
                 >
                   <Link 
-                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Spa Retreat B & B Package (R400 per person). Is the 30% discount currently available?"
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Amazing Instant Glow Facial (R200) with Free 10mins Foot Massage. When is your next availability?"
                     target="_blank"
                     className="flex items-center justify-center gap-2"
                   >
                     <MessageCircle className="w-5 h-5" />
-                    Book B&B Package
+                    Book Instant Glow Facial
                   </Link>
                 </Button>
               </CardContent>
@@ -725,7 +731,7 @@ export default function HomePage() {
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/kids-massage.jpeg"
+                  src="/real-massage.jpeg"
                   alt="90mins Hotstones Garden Massage"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -1852,7 +1858,7 @@ export default function HomePage() {
 
               <div className="relative h-32 rounded-xl overflow-hidden group cursor-pointer shadow-md hover:shadow-lg transition-all duration-300">
                 <Image
-                  src="/hero5.jpeg"
+                  src="/new-kids.jpeg"
                   alt="Group pamper sessions"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
