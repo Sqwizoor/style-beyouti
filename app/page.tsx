@@ -245,15 +245,15 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {/* Kids Pamper */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-64 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
                   <Image
                     src="/kids6.jpeg"
                     alt="Kids Pamper Package"
                     fill
-                    quality={95}
+                    quality={100}
                     priority
-                    className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -367,14 +367,14 @@ export default function HomePage() {
 
             {/* Couples Combo for 2 people */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-64 overflow-hidden p-4 bg-gradient-to-br from-spa-gold-50 to-spa-beige-50 dark:from-slate-700 dark:to-slate-800">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-gold-50 to-spa-beige-50 dark:from-slate-700 dark:to-slate-800">
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
                   <Image
-                    src="/service.png"
+                    src="/couples.jpeg"
                     alt="Couples Combo for 2 people"
                     fill
-                    quality={95}
-                    className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -472,16 +472,124 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
+            {/* Aromatherapy Pamper Package for 2 */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-pink-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
+                  <Image
+                    src="/deal-two.jpeg"
+                    alt="Aromatherapy Pamper Package for 2 People"
+                    fill
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
+                
+                {/* Price Badge */}
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[90px]">
+                  <div className="text-center">
+                    <div className="text-sm font-bold whitespace-nowrap">R550</div>
+                    <div className="text-xs whitespace-nowrap">FOR 2 PEOPLE</div>
+                  </div>
+                </div>
+                
+                {/* Duration Badge */}
+                <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2">
+                  <Clock className="w-4 h-4" />
+                  <span className="text-sm font-medium">40 minutes</span>
+                </div>
+
+                {/* Icon */}
+                <div className="absolute bottom-4 left-4 text-3xl z-10">
+                  🌞
+                </div>
+              </div>
+              
+              <CardContent className="p-6">
+                {/* Rating */}
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i}
+                        className={`w-4 h-4 ${i < 5 ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">(5.0)</span>
+                </div>
+
+                <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
+                  Aromatherapy Pamper for 2
+                </h3>
+                
+                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
+                  You only pay R550 for 2 People. Perfect pamper session with aromatherapy and relaxation treatments.
+                </p>
+
+                {/* Treatments Included */}
+                <div className="mb-4">
+                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
+                    Treatments Included:
+                  </h4>
+                  <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-1">
+                    <li>🌞 20mins Aromatherapy Neck, Back and Shoulder Massage</li>
+                    <li>• Back Exfoliation: 5 mins</li>
+                    <li>• Indian Head Massage: 5 mins 👌💯</li>
+                  </ul>
+                  <p className="text-sm text-spa-beige-600 dark:text-spa-beige-400 mt-2 font-medium">
+                    Treatment time: 40 minutes
+                  </p>
+                </div>
+
+                {/* Bonus */}
+                <div className="mb-4 bg-spa-pink-50 dark:bg-spa-pink-900/20 rounded-lg p-3">
+                  <p className="font-poppins text-spa-pink-700 dark:text-spa-pink-300 text-sm font-medium">
+                    🦶 Plus a Free 10mins Foot Massage
+                  </p>
+                </div>
+
+                {/* Features */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    For 2 People
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    40 Minutes
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Free Foot Massage
+                  </span>
+                </div>
+
+                {/* Booking Button */}
+                <Button 
+                  asChild
+                  className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
+                  <Link 
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Aromatherapy Pamper for 2 (R550 for 2 people, 40 mins). When is your next availability?"
+                    target="_blank"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Book Aromatherapy Pamper
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
             {/* Massage Treatments 60mins */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-64 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-pink-50 dark:from-slate-700 dark:to-slate-800">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-pink-50 dark:from-slate-700 dark:to-slate-800">
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
                   <Image
                     src="/service2.png"
                     alt="Massage Treatments 60mins"
                     fill
-                    quality={95}
-                    className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -564,14 +672,14 @@ export default function HomePage() {
 
             {/* Just for you @ R500pp Only */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-64 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
                   <Image
                     src="/service3.png"
                     alt="Just for you Special Package"
                     fill
-                    quality={95}
-                    className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -659,14 +767,14 @@ export default function HomePage() {
 
             {/* Amazing Instant Glow Facial */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-64 overflow-hidden p-4 bg-gradient-to-br from-spa-gold-50 to-spa-beige-50 dark:from-slate-700 dark:to-slate-800">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-gold-50 to-spa-beige-50 dark:from-slate-700 dark:to-slate-800">
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
                   <Image
                     src="/service4.png"
                     alt="Amazing Instant Glow Facial"
                     fill
-                    quality={95}
-                    className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -753,14 +861,14 @@ export default function HomePage() {
 
             {/* 90mins Hotstones Garden Massage */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-64 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
                   <Image
                     src="/real-massage.jpeg"
                     alt="90mins Hotstones Garden Massage"
                     fill
-                    quality={95}
-                    className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -841,14 +949,14 @@ export default function HomePage() {
 
             {/* Amazing 5 Treatments at Spa House */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-64 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-beige-50 dark:from-slate-700 dark:to-slate-800">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-beige-50 dark:from-slate-700 dark:to-slate-800">
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
                   <Image
                     src="/5amazing.jpeg"
                     alt="Amazing 5 Treatments with Pool"
                     fill
-                    quality={95}
-                    className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
