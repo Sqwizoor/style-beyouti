@@ -49,7 +49,7 @@ export default function MealOptions() {
     { id: 'quarter', name: 'Quarter Chicken with Chips and a Roll', price: 150 },
     { 
       id: 'tbone', 
-      name: 'T-Bone Steak with Wors 🧆 (Halaal)', 
+      name: 'Meats (Halaal) - T-Bone Steak with Wors 🧆', 
       price: 150,
       description: 'Served with Pap / Chips and Tomato Chutney / Chakalaka'
     },
@@ -60,7 +60,7 @@ export default function MealOptions() {
     { id: 'mojito-jug', name: 'Mojito / Juice', price: 70, unit: 'jug' },
     { id: 'cappuccino', name: 'Cappuccino with Truffle Biscuits', price: 40 },
     { id: 'cider', name: 'Ciders (Alcoholic)', price: 40 },
-    { id: 'wine', name: 'Bottle of Wine', price: 150 },
+    { id: 'wine', name: 'Bottle of Wine (Alcoholic)', price: 150 },
     { id: 'ice', name: 'Bag of Ice', price: 40 },
   ]
 

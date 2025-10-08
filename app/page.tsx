@@ -1094,7 +1094,7 @@ export default function HomePage() {
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/spa-food.jpeg"
+                  src="/cool-food.jpeg"
                   alt="Snack Basket with Chips and Drink"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -1155,7 +1155,7 @@ export default function HomePage() {
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/spa-food2.jpeg"
+                  src="/new-kids.jpeg"
                   alt="Meal Options - Chicken Wrap or Quarter Chicken"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
