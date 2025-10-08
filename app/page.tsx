@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import Image from 'next/image'
 import HeroSlider from '@/components/hero-slider'
 import Footer from '@/components/footer'
+import MealOptions from '@/components/meal-options'
 
 export const metadata: Metadata = {
   title: "Style & Beyouti Zone Spa | Personal • Private • Affordable • Relaxing",
@@ -1222,58 +1223,85 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            {/* Halaal Meats */}
+            {/* Group Meals */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-48 overflow-hidden">
                 <Image
                   src="/food3.jpeg"
-                  alt="Halaal T-Bone Steak with Wors"
+                  alt="Group Meals - Chicken Biryani and Wraps"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
                 
-                {/* Halaal Badge */}
+                {/* Group Meals Badge */}
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[80px]">
                   <div className="text-center">
-                    <div className="text-xs whitespace-nowrap">HALAAL</div>
-                    <div className="text-sm font-bold whitespace-nowrap">MEATS</div>
+                    <div className="text-xs whitespace-nowrap">GROUP</div>
+                    <div className="text-sm font-bold whitespace-nowrap">MEALS</div>
                   </div>
                 </div>
 
-                {/* Steak Icon */}
+                {/* Group Icon */}
                 <div className="absolute bottom-4 left-4 text-3xl z-10">
-                  🥩
+                  👭
                 </div>
               </div>
               
               <CardContent className="p-6">
                 <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
-                  Halaal Meats
+                  Group Meals
                 </h3>
                 
                 <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
-                  Premium Halaal meat options for a hearty meal during your spa experience.
+                  Lunch will be served in Style with Fancy Decor 🍽️ Food in food warmers and will be displayed with Glassware, Crockery, Cutlery and Table Cloths. Stylishly decorated and set up to enjoy the well prepared meal 👌 with a Soft Drink/Juice to quench the thirst 🍹
                 </p>
 
-                {/* Meat Options */}
+                {/* Group Meals Highlight */}
+                <div className="mb-4 bg-spa-gold-50 dark:bg-spa-gold-900/20 rounded-lg p-3">
+                  <p className="font-poppins text-spa-gold-700 dark:text-spa-gold-300 text-sm font-medium">
+                    💡 The Biryani is recommended for Groups as it is Cost effective and are generous portions - ideal meal for groups 👭👨‍👩‍👦‍👦💑👌
+                  </p>
+                </div>
+
+                {/* Menu Options */}
                 <div className="mb-4">
                   <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
-                    Includes:
+                    Menu Options:
                   </h4>
-                  <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-1">
-                    <li>• T-Bone Steak with Wors 🧆</li>
-                    <li>• Served with Pap and Chakalaka</li>
-                  </ul>
+                  <div className="space-y-3">
+                    <div className="bg-spa-beige-50 dark:bg-spa-beige-900/10 rounded-lg p-3">
+                      <p className="font-poppins font-semibold text-spa-black dark:text-spa-white text-sm mb-1">
+                        🍛 Chicken Biryani (Recommended for Groups)
+                      </p>
+                      <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-1 ml-4">
+                        <li>• Cucumber Sourmilk Salad</li>
+                        <li>• Plus Carrot Salad</li>
+                        <li>• Pickles</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-spa-beige-50 dark:bg-spa-beige-900/10 rounded-lg p-3">
+                      <p className="font-poppins font-semibold text-spa-black dark:text-spa-white text-sm">
+                        🌯 Or Chicken Wrap
+                      </p>
+                      <p className="text-sm text-spa-beige-600 dark:text-spa-beige-400 ml-4">
+                        Served with Chips 🍟 and a soft drink
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Features */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    Halaal Certified
+                    Stylish Setup
                   </span>
                   <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    Premium Cuts
+                    Generous Portions
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Cost Effective
                   </span>
                 </div>
 
@@ -1283,12 +1311,12 @@ export default function HomePage() {
                   className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
                 >
                   <Link 
-                    href="https://wa.me/27617747378?text=Hi! I'd like to add Halaal Meats (T-Bone Steak with Wors, Pap and Chakalaka) to my spa booking. Please provide pricing and availability."
+                    href="https://wa.me/27617747378?text=Hi! I'd like to order Group Meals for my spa booking. I'm interested in the Chicken Biryani or Chicken Wrap options with stylish setup. Please provide pricing and availability."
                     target="_blank"
                     className="flex items-center justify-center gap-2"
                   >
                     <MessageCircle className="w-5 h-5" />
-                    Order Halaal Meats
+                    Order Group Meals
                   </Link>
                 </Button>
               </CardContent>
@@ -1556,6 +1584,26 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Interactive Meal Options Section */}
+      <section className="py-20 bg-gradient-to-b from-spa-white via-spa-beige-50 to-spa-pink-50 dark:from-slate-800 dark:via-slate-700 dark:to-slate-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-spa-pink-400 to-spa-gold-400 rounded-full shadow-lg mb-6">
+              <Sparkles className="w-8 h-8 text-spa-white" />
+            </div>
+            <h2 className="font-playfair font-bold text-4xl sm:text-5xl text-spa-black dark:text-spa-white mb-4">
+              Order Your Meal & Extras
+            </h2>
+            <p className="font-lora text-xl text-spa-beige-700 dark:text-spa-beige-300 max-w-3xl mx-auto">
+              Select from our delicious meal options, drinks, activities, and special occasion extras. 
+              Your selections will be sent directly via WhatsApp for easy ordering!
+            </p>
+          </div>
+
+          <MealOptions />
         </div>
       </section>
 
@@ -1861,14 +1909,14 @@ export default function HomePage() {
               <div className="relative h-32 rounded-xl overflow-hidden group cursor-pointer shadow-md hover:shadow-lg transition-all duration-300">
                 <Image
                   src="/spa-food3.jpeg"
-                  alt="Premium halaal meats"
+                  alt="Group meals with stylish setup"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-spa-gold-500/20 group-hover:bg-spa-gold-500/40 transition-all duration-300"></div>
                 <div className="absolute bottom-2 left-2 right-2">
                   <p className="font-poppins text-spa-white text-xs font-medium">
-                    Premium Halaal
+                    Group Meals
                   </p>
                 </div>
               </div>
@@ -2439,76 +2487,6 @@ export default function HomePage() {
                 Leave feeling refreshed, rejuvenated, and ready to take on the world
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Special Offers Section */}
-      <section className="py-20 bg-gradient-to-r from-spa-pink-100 via-spa-beige-50 to-spa-gold-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-playfair font-bold text-4xl sm:text-5xl text-spa-black dark:text-spa-white mb-4">
-              Special Offers
-            </h2>
-            <p className="font-lora text-xl text-spa-beige-700 dark:text-spa-beige-300 max-w-2xl mx-auto">
-              Limited-time packages designed to give you the best value for your wellness investment
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="relative overflow-hidden shadow-2xl border-0 bg-gradient-to-br from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:shadow-3xl transition-all duration-300">
-              <div className="absolute top-4 right-4 bg-spa-pink-500 text-spa-white px-3 py-1 rounded-full text-sm font-bold">
-                NEW CLIENT
-              </div>
-              <CardContent className="p-8">
-                <h3 className="font-playfair font-bold text-2xl text-spa-black dark:text-spa-white mb-4">
-                  First Visit Special
-                </h3>
-                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-6">
-                  Experience our signature relaxation package at a special introductory price. Includes full-body massage and mini facial.
-                </p>
-                <div className="flex items-center mb-6">
-                  <span className="font-playfair text-3xl font-bold text-spa-pink-600 dark:text-spa-pink-400">R299</span>
-                  <span className="font-poppins text-spa-beige-500 line-through ml-3">R450</span>
-                  <span className="bg-spa-gold-100 dark:bg-spa-gold-900/30 text-spa-gold-700 dark:text-spa-gold-400 px-2 py-1 rounded text-sm ml-3">Save R151</span>
-                </div>
-                <Button 
-                  asChild
-                  className="w-full bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 hover:from-spa-pink-600 hover:to-spa-gold-600 text-spa-white font-poppins font-semibold rounded-full"
-                >
-                  <Link href="tel:0617747378">
-                    Book Now
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="relative overflow-hidden shadow-2xl border-0 bg-gradient-to-br from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:shadow-3xl transition-all duration-300">
-              <div className="absolute top-4 right-4 bg-spa-gold-500 text-spa-white px-3 py-1 rounded-full text-sm font-bold">
-                COUPLES
-              </div>
-              <CardContent className="p-8">
-                <h3 className="font-playfair font-bold text-2xl text-spa-black dark:text-spa-white mb-4">
-                  Couples Retreat Package
-                </h3>
-                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-6">
-                  Share the relaxation experience with your partner. Side-by-side massages in the comfort of your home.
-                </p>
-                <div className="flex items-center mb-6">
-                  <span className="font-playfair text-3xl font-bold text-spa-gold-600 dark:text-spa-gold-400">R599</span>
-                  <span className="font-poppins text-spa-beige-500 line-through ml-3">R750</span>
-                  <span className="bg-spa-pink-100 dark:bg-spa-pink-900/30 text-spa-pink-700 dark:text-spa-pink-400 px-2 py-1 rounded text-sm ml-3">Save R151</span>
-                </div>
-                <Button 
-                  asChild
-                  className="w-full bg-gradient-to-r from-spa-gold-500 to-spa-pink-500 hover:from-spa-gold-600 hover:to-spa-pink-600 text-spa-white font-poppins font-semibold rounded-full"
-                >
-                  <Link href="https://wa.me/0617747378?text=Hi, I'm interested in the Couples Retreat Package" target="_blank">
-                    WhatsApp to Book
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
