@@ -67,7 +67,7 @@ export default function ContactPage() {
               </h1>
               <p className="font-lora text-xl text-spa-beige-700 mb-8 leading-relaxed">
                 Ready to experience ultimate relaxation? Contact us to book your personalized 
-                spa session and discover the luxury of at-home wellness treatments.
+                spa session and discover the luxury wellness treatments.
               </p>
               
               <div className="space-y-4 mb-8">
