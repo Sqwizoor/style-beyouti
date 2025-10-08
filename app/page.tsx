@@ -245,11 +245,13 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {/* Kids Pamper */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/new-kids2.jpeg"
                   alt="Kids Pamper Package"
                   fill
+                  quality={95}
+                  priority
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -363,11 +365,12 @@ export default function HomePage() {
 
             {/* Couples Combo for 2 people */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/service.png"
                   alt="Couples Combo for 2 people"
                   fill
+                  quality={95}
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -459,11 +462,12 @@ export default function HomePage() {
 
             {/* Massage Treatments 60mins */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/service2.png"
                   alt="Massage Treatments 60mins"
                   fill
+                  quality={95}
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -546,11 +550,12 @@ export default function HomePage() {
 
             {/* Just for you @ R500pp Only */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/service3.png"
                   alt="Just for you Special Package"
                   fill
+                  quality={95}
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -638,11 +643,12 @@ export default function HomePage() {
 
             {/* Amazing Instant Glow Facial */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/service4.png"
                   alt="Amazing Instant Glow Facial"
                   fill
+                  quality={95}
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -729,11 +735,12 @@ export default function HomePage() {
 
             {/* 90mins Hotstones Garden Massage */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/real-massage.jpeg"
                   alt="90mins Hotstones Garden Massage"
                   fill
+                  quality={95}
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
@@ -814,11 +821,12 @@ export default function HomePage() {
 
             {/* Amazing 5 Treatments at Spa House */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/pool.jpeg"
                   alt="Amazing 5 Treatments with Pool"
                   fill
+                  quality={95}
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
