@@ -844,7 +844,7 @@ export default function HomePage() {
               <div className="relative h-64 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-beige-50 dark:from-slate-700 dark:to-slate-800">
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
                   <Image
-                    src="/pool.jpeg"
+                    src="/5amazing.jpeg"
                     alt="Amazing 5 Treatments with Pool"
                     fill
                     quality={95}
