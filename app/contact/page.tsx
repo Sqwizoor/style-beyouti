@@ -33,15 +33,6 @@ const contactMethods = [
     display: "Chat with us",
     color: "from-emerald-500 to-emerald-600",
     available: "Instant responses"
-  },
-  {
-    icon: Mail,
-    title: "Email Us",
-    description: "Send us your detailed requirements and preferences",
-    action: "mailto:info@stylebeyoutizone.co.za",
-    display: "info@stylebeyoutizone.co.za",
-    color: "from-spa-gold-500 to-spa-gold-600",
-    available: "24-hour response"
   }
 ]
 

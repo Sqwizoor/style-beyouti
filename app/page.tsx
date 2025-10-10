@@ -105,8 +105,8 @@ export default function HomePage() {
                     objectFit: 'cover'
                   }}
                 >
-                  <source src="/spa-video.mp4" type="video/mp4" />
-                  <source src="/spa-video.webm" type="video/webm" />
+                  <source src="/new-vid3.mp4" type="video/mp4" />
+                  <source src="/new-vid3.webm" type="video/webm" />
                   Your browser does not support the video tag.
                 </video>
                 
@@ -244,6 +244,988 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+            {/* Garden Massages - NEW */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
+                  <Image
+                    src="/outdoor.jpeg"
+                    alt="Garden Massage"
+                    fill
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
+                
+                {/* NEW Badge */}
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[70px]">
+                  <div className="text-center">
+                    <div className="text-sm font-bold whitespace-nowrap">R550</div>
+                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R700</div>
+                  </div>
+                </div>
+                
+                {/* NEW Badge Icon */}
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-spa-pink-600 to-spa-gold-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-pulse">
+                  NEW! 💆‍♀️
+                </div>
+
+                {/* Garden Icon */}
+                <div className="absolute bottom-4 left-4 text-3xl z-10">
+                  🏡
+                </div>
+              </div>
+              
+              <CardContent className="p-6">
+                {/* Rating */}
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i}
+                        className={`w-4 h-4 ${i < 5 ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">(5.0)</span>
+                </div>
+
+                <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
+                  Garden Massages 🏡
+                </h3>
+                
+                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
+                  New improvements added 👌 Perfect chillout place right @ your doorstep 🏘️
+                </p>
+
+                {/* Features List */}
+                <div className="mb-4">
+                  <ul className="space-y-2 text-sm text-spa-beige-600 dark:text-spa-beige-400">
+                    <li className="flex items-start">
+                      <span className="mr-2">🐦🦜</span>
+                      <span>Birds Chirping</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2">🐇🐰</span>
+                      <span>Rabbits running 🐾</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2">💞</span>
+                      <span>Fresh air with a cool breeze</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2">💏</span>
+                      <span>Nothing more relaxing than to be massaged in the garden</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2">💕😍</span>
+                      <span>Adds to the Romance 💯</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Features */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Save R150
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Garden Setting
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Romantic Atmosphere
+                  </span>
+                </div>
+
+                {/* Booking Button */}
+                <Button 
+                  asChild
+                  className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
+                  <Link 
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Garden Massage package (R550, was R700). Please let me know about availability."
+                    target="_blank"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Book Garden Massage
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Crazy In-Store Specials - NEW */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
+                  <Image
+                    src="/dayspa5.jpeg"
+                    alt="Crazy In-Store Specials"
+                    fill
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
+                
+                {/* Special Price Badge */}
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[70px]">
+                  <div className="text-center">
+                    <div className="text-sm font-bold whitespace-nowrap">R1.00</div>
+                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R2.00</div>
+                  </div>
+                </div>
+                
+                {/* CRAZY SPECIAL Badge */}
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-red-600 to-orange-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-pulse">
+                  🔥 CRAZY!
+                </div>
+
+                {/* Special Icon */}
+                <div className="absolute bottom-4 left-4 text-3xl z-10">
+                  🎉
+                </div>
+              </div>
+              
+              <CardContent className="p-6">
+                {/* Rating */}
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i}
+                        className={`w-4 h-4 ${i < 5 ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">(5.0)</span>
+                </div>
+
+                <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
+                  Crazy In-Store Specials 🎉
+                </h3>
+                
+                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
+                  Don't miss out on our incredible in-store specials! Limited time offers that you won't believe.
+                </p>
+
+                {/* Special Highlight */}
+                <div className="mb-4 bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-lg p-4 border-2 border-dashed border-red-300 dark:border-red-700">
+                  <p className="font-poppins text-red-700 dark:text-red-300 text-center font-bold text-lg mb-2">
+                    🔥 CRAZY DEALS! 🔥
+                  </p>
+                  <p className="font-poppins text-spa-beige-700 dark:text-spa-beige-300 text-sm text-center">
+                    Visit our spa to discover amazing specials starting from just R1.00!
+                  </p>
+                </div>
+
+                {/* Call Out */}
+                <div className="mb-4">
+                  <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 text-sm leading-relaxed">
+                    📍 Available exclusively at our spa location<br/>
+                    ⏰ Limited time only - while stocks last!<br/>
+                    💎 Premium treatments at unbelievable prices
+                  </p>
+                </div>
+
+                {/* Features */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-gradient-to-r from-red-100 to-orange-100 dark:from-red-900/30 dark:to-orange-900/30 text-red-600 dark:text-red-400 rounded-full text-xs font-medium">
+                    Limited Time
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    In-Store Only
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-gold-100 to-spa-pink-100 dark:from-spa-gold-900/30 dark:to-spa-pink-900/30 text-spa-gold-600 dark:text-spa-gold-400 rounded-full text-xs font-medium">
+                    Amazing Value
+                  </span>
+                </div>
+
+                {/* Booking Button */}
+                <Button 
+                  asChild
+                  className="w-full bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
+                  <Link 
+                    href="https://wa.me/27617747378?text=Hi! I'd like to know more about the Crazy In-Store Specials. What deals are currently available?"
+                    target="_blank"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Ask About Specials
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* 2 Hour 5 Treatments Package */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-pink-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
+                  <Image
+                    src="/2hour-treatments.png"
+                    alt="2 Hour 5 Treatments Package"
+                    fill
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
+                
+                {/* Price Badge */}
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[80px]">
+                  <div className="text-center">
+                    <div className="text-sm font-bold whitespace-nowrap">R650</div>
+                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R950</div>
+                  </div>
+                </div>
+                
+                {/* Duration Badge */}
+                <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2">
+                  <Clock className="w-4 h-4" />
+                  <span className="text-sm font-medium">2 Hours</span>
+                </div>
+
+                {/* Icon */}
+                <div className="absolute bottom-4 left-4 text-3xl z-10">
+                  🧖‍♀️
+                </div>
+              </div>
+              
+              <CardContent className="p-6">
+                {/* Rating */}
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i}
+                        className={`w-4 h-4 ${i < 5 ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">(5.0)</span>
+                </div>
+
+                <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
+                  2 Hour 5 Treatments Package
+                </h3>
+                
+                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
+                  Memorable Events Celebrated @ Style and BeYouTi Zone
+                </p>
+
+                {/* Highlight */}
+                <div className="mb-4 bg-spa-pink-50 dark:bg-spa-pink-900/20 rounded-lg p-3">
+                  <p className="font-poppins text-spa-pink-700 dark:text-spa-pink-300 text-sm font-medium text-center">
+                    Making Memories 🧖‍♀️🧖‍♂️👣👭👩‍❤️‍👨<br/>
+                    Spending Precious Moments together
+                  </p>
+                </div>
+
+                {/* Treatments Included */}
+                <div className="mb-4">
+                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
+                    The Pamper Package Includes: 5 Treatments
+                  </h4>
+                  <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-1">
+                    <li>• Hotstones / Swedish Full Body Massage: 60-mins</li>
+                    <li>• Indian head massage: 10-mins</li>
+                    <li>• Back Exfoliation: 10mins</li>
+                    <li>• Express Pedicure: 20-mins</li>
+                    <li>• Leg Glow Exfoliation: 10mins</li>
+                    <li>• Nail Polish painted on toes for the Lady (optional included) 🌹</li>
+                  </ul>
+                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 mt-2 font-medium">
+                    Treatment time: 2 hours
+                  </p>
+                </div>
+
+                {/* Pricing Info */}
+                <div className="mb-4 bg-spa-gold-50 dark:bg-spa-gold-900/20 rounded-lg p-3">
+                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 font-medium text-center">
+                    <span className="line-through text-spa-beige-500">Was R950</span> → <span className="text-spa-pink-600 dark:text-spa-pink-400 font-bold">Now R650</span>
+                  </p>
+                </div>
+
+                {/* Features */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Save R300
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    5 Treatments
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    2 Hours
+                  </span>
+                </div>
+
+                {/* Booking Button */}
+                <Button 
+                  asChild
+                  className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
+                  <Link 
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the 2 Hour 5 Treatments Package (R650, was R950). This includes 5 treatments over 2 hours. When is your next availability?"
+                    target="_blank"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Book 5 Treatments Package
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Couples Deluxe Love Package */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-gold-50 to-spa-pink-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
+                  <Image
+                    src="/couple.jpeg"
+                    alt="Couples Deluxe Love Package"
+                    fill
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
+                
+                {/* Price Badge */}
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[90px]">
+                  <div className="text-center">
+                    <div className="text-sm font-bold whitespace-nowrap">R1,950</div>
+                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R2,500</div>
+                  </div>
+                </div>
+                
+                {/* DELUXE Badge */}
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-spa-pink-600 to-spa-gold-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                  💎 DELUXE
+                </div>
+
+                {/* Love Icon */}
+                <div className="absolute bottom-4 left-4 text-3xl z-10">
+                  💕
+                </div>
+              </div>
+              
+              <CardContent className="p-6">
+                {/* Rating */}
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i}
+                        className={`w-4 h-4 ${i < 5 ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">(5.0)</span>
+                </div>
+
+                <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
+                  Couples Deluxe Love Package 💕
+                </h3>
+                
+                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
+                  Personal, Private, Affordable and very Relaxing Environment with an Amazing Service @ your doorstep 💯👌
+                </p>
+
+                {/* Exclusive Highlight */}
+                <div className="mb-4 bg-gradient-to-r from-spa-pink-50 to-spa-gold-50 dark:from-spa-pink-900/20 dark:to-spa-gold-900/20 rounded-lg p-4 border-2 border-spa-gold-300 dark:border-spa-gold-700">
+                  <p className="font-poppins text-spa-gold-700 dark:text-spa-gold-300 text-center font-bold text-base mb-1">
+                    💎 Exclusive Deluxe Experience 💎
+                  </p>
+                  <p className="font-poppins text-spa-beige-700 dark:text-spa-beige-300 text-sm text-center">
+                    Only Style and Beyouti Zone Day Spa
+                  </p>
+                </div>
+
+                {/* Key Features */}
+                <div className="mb-4">
+                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
+                    What Makes This Package Special:
+                  </h4>
+                  <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-2">
+                    <li className="flex items-start">
+                      <span className="mr-2">✨</span>
+                      <span>Personal & Private environment</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2">💆‍♀️</span>
+                      <span>Premium deluxe treatments for couples</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2">🏠</span>
+                      <span>Amazing service @ your doorstep</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2">💕</span>
+                      <span>Perfect for romantic moments together</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2">🌟</span>
+                      <span>Very relaxing & affordable luxury</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Pricing Info */}
+                <div className="mb-4 bg-spa-pink-50 dark:bg-spa-pink-900/20 rounded-lg p-3">
+                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 font-medium text-center">
+                    <span className="line-through text-spa-beige-500">Was R2,500</span> → <span className="text-spa-pink-600 dark:text-spa-pink-400 font-bold">Now R1,950</span>
+                  </p>
+                </div>
+
+                {/* Features */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Save R550
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-gold-100 to-spa-pink-100 dark:from-spa-gold-900/30 dark:to-spa-pink-900/30 text-spa-gold-600 dark:text-spa-gold-400 rounded-full text-xs font-medium">
+                    Deluxe Package
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    For Couples
+                  </span>
+                </div>
+
+                {/* Booking Button */}
+                <Button 
+                  asChild
+                  className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
+                  <Link 
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Couples Deluxe Love Package (R1,950, was R2,500). Please tell me more about this exclusive deluxe experience for couples."
+                    target="_blank"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Book Deluxe Love Package
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Couples Package for 2 people with Meals */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-beige-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
+                  <Image
+                    src="/love-package.png"
+                    alt="Couples Package with Meals"
+                    fill
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
+                
+                {/* Price Badge */}
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[85px]">
+                  <div className="text-center">
+                    <div className="text-sm font-bold whitespace-nowrap">R950</div>
+                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R1,200</div>
+                  </div>
+                </div>
+                
+                {/* Duration Badge */}
+                <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2">
+                  <Clock className="w-4 h-4" />
+                  <span className="text-sm font-medium">1 hour</span>
+                </div>
+
+                {/* Icon */}
+                <div className="absolute bottom-4 left-4 text-3xl z-10">
+                  🌮
+                </div>
+              </div>
+              
+              <CardContent className="p-6">
+                {/* Rating */}
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i}
+                        className={`w-4 h-4 ${i < 5 ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">(5.0)</span>
+                </div>
+
+                <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
+                  Couples Package with Meals 🌮
+                </h3>
+                
+                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
+                  Couples Package - 1hr @ Only R950 for 2 people
+                </p>
+
+                {/* Treatments Included */}
+                <div className="mb-4">
+                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
+                    1hr Massage Includes:
+                  </h4>
+                  <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-1">
+                    <li>• Hotstones / Swedish Full Body Massage: 50-mins</li>
+                    <li>• Indian head massage: 10-mins</li>
+                    <li>• Back Exfoliation: 10mins</li>
+                  </ul>
+                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 mt-2 font-medium">
+                    Total Treatment time: 1 hour
+                  </p>
+                </div>
+
+                {/* Meals Included */}
+                <div className="mb-4 bg-spa-gold-50 dark:bg-spa-gold-900/20 rounded-lg p-3">
+                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
+                    Including 2 Meals:
+                  </h4>
+                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 font-medium">
+                    🌮 Chicken Wrap<br/>
+                    🍟 Chips
+                  </p>
+                </div>
+
+                {/* Pricing Info */}
+                <div className="mb-4 bg-spa-pink-50 dark:bg-spa-pink-900/20 rounded-lg p-3">
+                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 font-medium text-center">
+                    <span className="line-through text-spa-beige-500">Was R1,200</span> → <span className="text-spa-pink-600 dark:text-spa-pink-400 font-bold">Now R950</span>
+                  </p>
+                </div>
+
+                {/* Features */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Save R250
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    For 2 People
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-gold-100 to-spa-pink-100 dark:from-spa-gold-900/30 dark:to-spa-pink-900/30 text-spa-gold-600 dark:text-spa-gold-400 rounded-full text-xs font-medium">
+                    Meals Included
+                  </span>
+                </div>
+
+                {/* Booking Button */}
+                <Button 
+                  asChild
+                  className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
+                  <Link 
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Couples Package with Meals (R950 for 2 people). It includes 1hr massage plus 2 meals with Chicken Wrap and Chips. When is your next availability?"
+                    target="_blank"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Book Couples Package
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Come Relax - Call to Action */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
+                  <Image
+                    src="/massage.jpeg"
+                    alt="Come Relax at Style and Beyouti Spa"
+                    fill
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
+                
+                {/* BOOK NOW Badge */}
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-4 py-2 rounded-lg font-bold shadow-lg animate-pulse">
+                  <div className="text-center">
+                    <div className="text-xs whitespace-nowrap">📲 BOOK NOW</div>
+                  </div>
+                </div>
+                
+                {/* Relax Badge */}
+                <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                  ✨ RELAX
+                </div>
+
+                {/* Icon */}
+                <div className="absolute bottom-4 left-4 text-3xl z-10">
+                  🧖‍♀️
+                </div>
+              </div>
+              
+              <CardContent className="p-6">
+                {/* Rating */}
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i}
+                        className={`w-4 h-4 ${i < 5 ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">(5.0)</span>
+                </div>
+
+                <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
+                  Come Relax at Style & Beyouti Spa
+                </h3>
+                
+                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed text-lg font-medium">
+                  Come Relax your Mind 🖼️🎨🪷 Body 🧖🏻‍♀️🧖🏻‍♂️ Tummy 🍱🍾🥂
+                </p>
+
+                {/* Urgent Call to Action */}
+                <div className="mb-4 bg-gradient-to-r from-spa-pink-50 via-spa-gold-50 to-spa-beige-50 dark:from-spa-pink-900/20 dark:via-spa-gold-900/20 dark:to-spa-beige-900/20 rounded-lg p-4 border-2 border-spa-pink-300 dark:border-spa-pink-700">
+                  <p className="font-poppins text-spa-pink-700 dark:text-spa-pink-300 text-center font-bold text-xl mb-2">
+                    Don't Delay! 📲
+                  </p>
+                  <p className="font-poppins text-spa-beige-700 dark:text-spa-beige-300 text-center text-base">
+                    Book your appointment today
+                  </p>
+                </div>
+
+                {/* What We Relax */}
+                <div className="mb-4">
+                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2 text-center">
+                    Complete Relaxation Experience:
+                  </h4>
+                  <div className="grid grid-cols-3 gap-3 text-center">
+                    <div className="bg-spa-beige-50 dark:bg-spa-beige-900/10 rounded-lg p-3">
+                      <div className="text-2xl mb-1">🖼️🎨</div>
+                      <p className="text-xs text-spa-beige-600 dark:text-spa-beige-400 font-medium">Mind</p>
+                    </div>
+                    <div className="bg-spa-pink-50 dark:bg-spa-pink-900/10 rounded-lg p-3">
+                      <div className="text-2xl mb-1">🧖‍♀️🧖‍♂️</div>
+                      <p className="text-xs text-spa-beige-600 dark:text-spa-beige-400 font-medium">Body</p>
+                    </div>
+                    <div className="bg-spa-gold-50 dark:bg-spa-gold-900/10 rounded-lg p-3">
+                      <div className="text-2xl mb-1">🍱🥂</div>
+                      <p className="text-xs text-spa-beige-600 dark:text-spa-beige-400 font-medium">Tummy</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Contact Info */}
+                <div className="mb-4 bg-spa-gold-50 dark:bg-spa-gold-900/20 rounded-lg p-3">
+                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 font-bold text-center">
+                    📲 Call/WhatsApp: 061 774 7378
+                  </p>
+                </div>
+
+                {/* Features */}
+                <div className="flex flex-wrap gap-2 mb-6 justify-center">
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Mind • Body • Tummy
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-gold-100 to-spa-pink-100 dark:from-spa-gold-900/30 dark:to-spa-pink-900/30 text-spa-gold-600 dark:text-spa-gold-400 rounded-full text-xs font-medium">
+                    Book Now
+                  </span>
+                </div>
+
+                {/* Booking Buttons */}
+                <div className="space-y-2">
+                  <Button 
+                    asChild
+                    className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                  >
+                    <Link 
+                      href="https://wa.me/27617747378?text=Hi! I'd like to relax my mind, body, and tummy at Style & Beyouti Spa. Please help me book an appointment!"
+                      target="_blank"
+                      className="flex items-center justify-center gap-2"
+                    >
+                      <MessageCircle className="w-5 h-5" />
+                      Book via WhatsApp
+                    </Link>
+                  </Button>
+                  <Button 
+                    asChild
+                    variant="outline"
+                    className="w-full border-2 border-spa-pink-300 text-spa-pink-600 dark:border-spa-pink-600 dark:text-spa-pink-400 hover:bg-spa-pink-50 dark:hover:bg-spa-pink-900/20 font-poppins font-medium rounded-full transition-all duration-300"
+                  >
+                    <Link 
+                      href="tel:0617747378"
+                      className="flex items-center justify-center gap-2"
+                    >
+                      <Phone className="w-5 h-5" />
+                      Call 061 774 7378
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Massage with Facial - Revive and Instant Glow Package */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-gold-50 to-spa-beige-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
+                  <Image
+                    src="/treat-yourself.png"
+                    alt="Massage with Facial - Revive and Instant Glow"
+                    fill
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
+                
+                {/* Price Badge */}
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[80px]">
+                  <div className="text-center">
+                    <div className="text-sm font-bold whitespace-nowrap">R650</div>
+                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R780</div>
+                  </div>
+                </div>
+                
+                {/* Duration Badge */}
+                <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2">
+                  <Clock className="w-4 h-4" />
+                  <span className="text-sm font-medium">1hr 30mins</span>
+                </div>
+
+                {/* Icon */}
+                <div className="absolute bottom-4 left-4 text-3xl z-10">
+                  ✨
+                </div>
+              </div>
+              
+              <CardContent className="p-6">
+                {/* Rating */}
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i}
+                        className={`w-4 h-4 ${i < 5 ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">(5.0)</span>
+                </div>
+
+                <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
+                  Massage with Facial ✨
+                </h3>
+                
+                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed font-semibold">
+                  Revive and Instant Glow Package
+                </p>
+
+                {/* Package Highlight */}
+                <div className="mb-4 bg-gradient-to-r from-spa-gold-50 to-spa-pink-50 dark:from-spa-gold-900/20 dark:to-spa-pink-900/20 rounded-lg p-3 border-2 border-spa-gold-300 dark:border-spa-gold-700">
+                  <p className="font-poppins text-spa-gold-700 dark:text-spa-gold-300 text-center font-bold text-base">
+                    ✨ Includes: 4 Treatments ✨
+                  </p>
+                  <p className="font-poppins text-spa-beige-700 dark:text-spa-beige-300 text-sm text-center mt-1">
+                    R650pp
+                  </p>
+                </div>
+
+                {/* Treatments Included */}
+                <div className="mb-4">
+                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
+                    Package Includes:
+                  </h4>
+                  <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-1">
+                    <li>• Hotstones / Swedish Full Body Massage: 50-mins</li>
+                    <li>• Indian head massage: 5-mins</li>
+                    <li>• Back Exfoliation: 5mins</li>
+                    <li>• Instant Glow Facial leaving your skin soft refreshed and Glowing: 30mins 👌💯</li>
+                  </ul>
+                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 mt-2 font-medium">
+                    Treatment time: 1hr 30mins
+                  </p>
+                </div>
+
+                {/* Glow Highlight */}
+                <div className="mb-4 bg-spa-pink-50 dark:bg-spa-pink-900/20 rounded-lg p-3">
+                  <p className="font-poppins text-spa-pink-700 dark:text-spa-pink-300 text-sm font-medium text-center">
+                    💆‍♀️ Full Body Massage + Glowing Facial 💯<br/>
+                    <span className="text-xs">Perfect combination for ultimate relaxation & beauty</span>
+                  </p>
+                </div>
+
+                {/* Pricing Info */}
+                <div className="mb-4 bg-spa-gold-50 dark:bg-spa-gold-900/20 rounded-lg p-3">
+                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 font-medium text-center">
+                    <span className="line-through text-spa-beige-500">Was R780</span> → <span className="text-spa-pink-600 dark:text-spa-pink-400 font-bold">Now R650</span>
+                  </p>
+                </div>
+
+                {/* Features */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Save R130
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-gold-100 to-spa-pink-100 dark:from-spa-gold-900/30 dark:to-spa-pink-900/30 text-spa-gold-600 dark:text-spa-gold-400 rounded-full text-xs font-medium">
+                    4 Treatments
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Instant Glow
+                  </span>
+                </div>
+
+                {/* Booking Button */}
+                <Button 
+                  asChild
+                  className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
+                  <Link 
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Revive and Instant Glow Package (R650pp). It includes massage, facial, and 4 treatments for 1hr 30mins. When is your next availability?"
+                    target="_blank"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Book Revive & Glow Package
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Treat Yourself Package */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
+              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
+                  <Image
+                    src="/dayspa4.jpeg"
+                    alt="Treat Yourself Package"
+                    fill
+                    quality={100}
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
+                
+                {/* Price Badge */}
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[80px]">
+                  <div className="text-center">
+                    <div className="text-sm font-bold whitespace-nowrap">R399</div>
+                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R550</div>
+                  </div>
+                </div>
+                
+                {/* CRAZILY LOW Badge */}
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-red-600 to-orange-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-pulse">
+                  🔥 CRAZILY LOW!
+                </div>
+
+                {/* Icon */}
+                <div className="absolute bottom-4 left-4 text-3xl z-10">
+                  💅
+                </div>
+              </div>
+              
+              <CardContent className="p-6">
+                {/* Rating */}
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i}
+                        className={`w-4 h-4 ${i < 5 ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">(5.0)</span>
+                </div>
+
+                <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
+                  Treat Yourself Package 💅
+                </h3>
+                
+                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
+                  Great news 👩‍👩‍👧‍👦👫👭👨‍👧 crazily low Specials @ Style and BeYouti Zone Day Spa 👌💅👣🧖‍♂️🧖‍♀️
+                </p>
+
+                {/* Special Highlight */}
+                <div className="mb-4 bg-gradient-to-r from-red-50 via-orange-50 to-yellow-50 dark:from-red-900/20 dark:via-orange-900/20 dark:to-yellow-900/20 rounded-lg p-4 border-2 border-dashed border-red-300 dark:border-red-700">
+                  <p className="font-poppins text-red-700 dark:text-red-300 text-center font-bold text-lg mb-2">
+                    🔥 CRAZILY LOW SPECIAL! 🔥
+                  </p>
+                  <p className="font-poppins text-spa-beige-700 dark:text-spa-beige-300 text-sm text-center">
+                    Limited time only - Don't miss out!
+                  </p>
+                </div>
+
+                {/* Mission Statement */}
+                <div className="mb-4 bg-spa-pink-50 dark:bg-spa-pink-900/20 rounded-lg p-3">
+                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2 text-center">
+                    Our Mission:
+                  </h4>
+                  <p className="font-poppins text-spa-pink-700 dark:text-spa-pink-300 text-sm text-center">
+                    We want to be able to add to your care of Body 👌 Mind 🧠 and Spirit 🤗👌
+                  </p>
+                </div>
+
+                {/* Body Mind Spirit Grid */}
+                <div className="mb-4">
+                  <div className="grid grid-cols-3 gap-3 text-center">
+                    <div className="bg-spa-pink-50 dark:bg-spa-pink-900/10 rounded-lg p-3">
+                      <div className="text-2xl mb-1">👌</div>
+                      <p className="text-xs text-spa-beige-600 dark:text-spa-beige-400 font-medium">Body</p>
+                    </div>
+                    <div className="bg-spa-gold-50 dark:bg-spa-gold-900/10 rounded-lg p-3">
+                      <div className="text-2xl mb-1">🧠</div>
+                      <p className="text-xs text-spa-beige-600 dark:text-spa-beige-400 font-medium">Mind</p>
+                    </div>
+                    <div className="bg-spa-beige-50 dark:bg-spa-beige-900/10 rounded-lg p-3">
+                      <div className="text-2xl mb-1">🤗</div>
+                      <p className="text-xs text-spa-beige-600 dark:text-spa-beige-400 font-medium">Spirit</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* For Everyone */}
+                <div className="mb-4 bg-spa-gold-50 dark:bg-spa-gold-900/20 rounded-lg p-3">
+                  <p className="font-poppins text-spa-gold-700 dark:text-spa-gold-300 text-sm font-medium text-center">
+                    👩‍👩‍👧‍👦 Perfect for families, friends & couples 👫👭
+                  </p>
+                </div>
+
+                {/* Pricing Info */}
+                <div className="mb-4 bg-spa-beige-50 dark:bg-spa-beige-900/20 rounded-lg p-3">
+                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 font-medium text-center">
+                    <span className="line-through text-spa-beige-500">Was R550</span> → <span className="text-spa-pink-600 dark:text-spa-pink-400 font-bold">Now R399</span>
+                  </p>
+                </div>
+
+                {/* Features */}
+                <div className="flex flex-wrap gap-2 mb-6 justify-center">
+                  <span className="px-3 py-1 bg-gradient-to-r from-red-100 to-orange-100 dark:from-red-900/30 dark:to-orange-900/30 text-red-600 dark:text-red-400 rounded-full text-xs font-medium">
+                    Save R151
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
+                    Body • Mind • Spirit
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-spa-gold-100 to-spa-pink-100 dark:from-spa-gold-900/30 dark:to-spa-pink-900/30 text-spa-gold-600 dark:text-spa-gold-400 rounded-full text-xs font-medium">
+                    For Everyone
+                  </span>
+                </div>
+
+                {/* Booking Button */}
+                <Button 
+                  asChild
+                  className="w-full bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
+                  <Link 
+                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Treat Yourself Package (R399, was R550). This crazily low special sounds perfect for body, mind and spirit! When is your next availability?"
+                    target="_blank"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Book Treat Yourself Package
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
             {/* Kids Pamper */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
@@ -771,7 +1753,7 @@ export default function HomePage() {
               <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-gold-50 to-spa-beige-50 dark:from-slate-700 dark:to-slate-800">
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
                   <Image
-                    src="/service4.png"
+                    src="/facials.jpeg"
                     alt="Amazing Instant Glow Facial"
                     fill
                     quality={100}
@@ -865,7 +1847,7 @@ export default function HomePage() {
               <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
                 <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
                   <Image
-                    src="/real-massage.jpeg"
+                    src="/massage-combo.png"
                     alt="90mins Hotstones Garden Massage"
                     fill
                     quality={100}
@@ -1094,7 +2076,7 @@ export default function HomePage() {
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/cool-food.jpeg"
+                  src="/underfood.jpeg"
                   alt="Snack Basket with Chips and Drink"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -1614,7 +2596,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/kids3.jpeg"
+                  src="/kids4.jpeg"
                   alt="Kids enjoying spa treatments"
                   fill
                   className="object-cover"
@@ -1735,7 +2717,7 @@ export default function HomePage() {
             {/* Large Featured Image */}
             <div className="md:col-span-2 lg:col-span-2 relative h-96 rounded-2xl overflow-hidden group cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500">
               <Image
-                src="/dayspa5.jpeg"
+                src="/youth4.jpeg"
                 alt="Luxury spa treatment room"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -1849,6 +2831,21 @@ export default function HomePage() {
                 <div className="absolute bottom-2 left-2 right-2">
                   <p className="font-poppins text-spa-white text-xs font-medium">
                     Family Bonding
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative h-32 rounded-xl overflow-hidden group cursor-pointer shadow-md hover:shadow-lg transition-all duration-300">
+                <Image
+                  src="/xnew-kids.jpeg"
+                  alt="Kids spa fun activities"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-spa-gold-500/20 group-hover:bg-spa-gold-500/40 transition-all duration-300"></div>
+                <div className="absolute bottom-2 left-2 right-2">
+                  <p className="font-poppins text-spa-white text-xs font-medium">
+                    Kids Fun Activities
                   </p>
                 </div>
               </div>

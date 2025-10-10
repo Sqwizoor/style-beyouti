@@ -47,13 +47,6 @@ export default function FloatingActionButton() {
       color: "bg-green-500 hover:bg-green-600 text-white shadow-green-200"
     },
     {
-      icon: Mail,
-      label: "Email",
-      action: "mailto:info@stylebeyoutizone.co.za",
-      description: "Send Email",
-      color: "bg-spa-gold-500 hover:bg-spa-gold-600 text-white"
-    },
-    {
       icon: MapPin,
       label: "Service Area",
       action: "/contact",

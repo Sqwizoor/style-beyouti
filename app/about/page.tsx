@@ -78,7 +78,7 @@ export default function AboutPage() {
             <div className="relative animate-slideIn">
               <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/dayspa4.jpeg"
+                  src="/kids4.jpeg"
                   alt="Spa treatment environment"
                   fill
                   className="object-cover"
@@ -104,7 +104,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/dayspa3.jpeg"
+                  src="/owner.jpeg"
                   alt="Founder of Style & Beyouti Zone Spa"
                   fill
                   className="object-cover"
@@ -343,7 +343,7 @@ export default function AboutPage() {
             <div className="relative animate-slideIn">
               <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/dayspa5.jpeg"
+                  src="/massage.jpeg"
                   alt="Professional spa treatment"
                   fill
                   className="object-cover"

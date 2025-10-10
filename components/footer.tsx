@@ -146,23 +146,6 @@ export default function Footer() {
                   </Link>
                 </div>
               </div>
-
-              <div className="flex items-start space-x-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-spa-gold-500 to-spa-gold-600 rounded-full flex items-center justify-center shadow-md mt-1">
-                  <Mail className="w-5 h-5 text-spa-white" />
-                </div>
-                <div>
-                  <p className="font-poppins font-medium text-spa-black dark:text-spa-white">
-                    Email Us
-                  </p>
-                  <Link
-                    href="mailto:info@stylebeyoutizone.co.za"
-                    className="font-poppins text-spa-gold-600 dark:text-spa-gold-400 hover:text-spa-gold-700 dark:hover:text-spa-gold-300 transition-colors text-sm"
-                  >
-                    info@stylebeyoutizone.co.za
-                  </Link>
-                </div>
-              </div>
             </div>
           </div>
         </div>
