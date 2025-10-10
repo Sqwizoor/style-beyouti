@@ -37,12 +37,7 @@ const contactMethods = [
 ]
 
 const serviceAreas = [
-  "Johannesburg Central",
-  "Sandton & Surrounds",
-  "Pretoria Areas",
-  "East Rand",
-  "West Rand",
-  "Midrand & Centurion"
+  "Johannesburg South"
 ]
 
 export default function ContactPage() {
