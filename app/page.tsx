@@ -90,42 +90,25 @@ export default function HomePage() {
               We bring professional wellness services directly to you, ensuring complete relaxation and rejuvenation.
             </p>
 
-            {/* Spa Experience Video */}
+            {/* Spa Experience Image */}
             <div className="relative max-w-4xl mx-auto mb-16 rounded-2xl overflow-hidden shadow-2xl">
-              <div className="relative aspect-video bg-gradient-to-br from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/20 dark:to-spa-gold-900/20">
-                <video
-                  className="w-full h-full object-cover rounded-2xl"
-                  controls
-                  preload="metadata"
-                  poster="/dayspa5.jpeg"
-                  playsInline
-                  controlsList="nodownload"
-                  style={{ 
-                    maxHeight: '500px',
-                    objectFit: 'cover'
-                  }}
-                >
-                  <source src="/new-vid3.mp4" type="video/mp4" />
-                  <source src="/new-vid3.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
-                
-                {/* Video overlay for additional styling */}
-                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/10 via-transparent to-transparent pointer-events-none rounded-2xl"></div>
-                
-                {/* Play button overlay (will be hidden when video controls are used) */}
-                <div className="absolute inset-0 flex items-center justify-center bg-spa-black/20 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl">
-                  <div className="w-20 h-20 bg-spa-white/90 rounded-full flex items-center justify-center shadow-xl">
-                    <div className="w-0 h-0 border-l-[12px] border-l-spa-pink-500 border-y-[8px] border-y-transparent ml-1"></div>
-                  </div>
+              <div className="relative aspect-video">
+                <Image
+                  src="/ximg5.jpeg"
+                  alt="Luxury Spa Experience"
+                  fill
+                  quality={100}
+                  className="object-cover w-full h-full rounded-2xl"
+                  style={{ objectFit: 'cover' }}
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/20 to-transparent"></div>
+                {/* Image Caption */}
+                <div className="absolute bottom-4 left-0 right-0 text-center">
+                  <p className="font-poppins text-spa-white text-sm font-medium bg-spa-black/50 backdrop-blur-sm rounded-full px-4 py-2 inline-block">
+                    Experience the Style & BeYouTi Zone Difference
+                  </p>
                 </div>
-              </div>
-              
-              {/* Video Caption */}
-              <div className="absolute bottom-4 left-4 right-4 text-center">
-                <p className="font-poppins text-spa-white text-sm font-medium bg-spa-black/50 backdrop-blur-sm rounded-full px-4 py-2 inline-block">
-                  Experience the Style & BeYouTi Zone Difference
-                </p>
               </div>
             </div>
 
@@ -246,15 +229,18 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {/* Garden Massages - NEW */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
-                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
-                  <Image
-                    src="/outdoor.jpeg"
-                    alt="Garden Massage"
-                    fill
-                    quality={100}
-                    className="object-contain group-hover:scale-105 transition-transform duration-500"
-                  />
+              <div className="relative h-96 overflow-hidden bg-gradient-to-br from-spa-beige-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative w-full h-full p-1">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src="/outdoor.jpeg"
+                      alt="Garden Massages"
+                      fill
+                      quality={100}
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
                 
@@ -357,15 +343,18 @@ export default function HomePage() {
 
             {/* Crazy In-Store Specials - NEW */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
-                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
-                  <Image
-                    src="/dayspa5.jpeg"
-                    alt="Crazy In-Store Specials"
-                    fill
-                    quality={100}
-                    className="object-contain group-hover:scale-105 transition-transform duration-500"
-                  />
+              <div className="relative h-96 overflow-hidden bg-gradient-to-br from-spa-pink-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative w-full h-full p-1">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src="/ximg2.jpeg"
+                      alt="Crazy In-Store Specials"
+                      fill
+                      quality={100}
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
                 
@@ -461,15 +450,18 @@ export default function HomePage() {
 
             {/* 2 Hour 5 Treatments Package */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-pink-50 dark:from-slate-700 dark:to-slate-800">
-                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
-                  <Image
-                    src="/2hour-treatments.png"
-                    alt="2 Hour 5 Treatments Package"
-                    fill
-                    quality={100}
-                    className="object-contain group-hover:scale-105 transition-transform duration-500"
-                  />
+              <div className="relative h-96 overflow-hidden bg-gradient-to-br from-spa-beige-50 to-spa-pink-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative w-full h-full p-1">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src="/2hour-treatments.png"
+                      alt="2 Hour 5 Treatments Package"
+                      fill
+                      quality={100}
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
                 
@@ -580,15 +572,18 @@ export default function HomePage() {
 
             {/* Couples Deluxe Love Package */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-gold-50 to-spa-pink-50 dark:from-slate-700 dark:to-slate-800">
-                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
-                  <Image
-                    src="/couple.jpeg"
-                    alt="Couples Deluxe Love Package"
-                    fill
-                    quality={100}
-                    className="object-contain group-hover:scale-105 transition-transform duration-500"
-                  />
+              <div className="relative h-96 overflow-hidden bg-gradient-to-br from-spa-gold-50 to-spa-pink-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative w-full h-full p-1">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src="/ximg4.jpeg"
+                      alt="Couples Deluxe Love Package"
+                      fill
+                      quality={100}
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
                 
@@ -709,136 +704,20 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            {/* Couples Package for 2 people with Meals */}
-            <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-beige-50 dark:from-slate-700 dark:to-slate-800">
-                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
-                  <Image
-                    src="/love-package.png"
-                    alt="Couples Package with Meals"
-                    fill
-                    quality={100}
-                    className="object-contain group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
-                
-                {/* Price Badge */}
-                <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-500 to-spa-gold-500 text-white px-3 py-1.5 rounded-lg font-bold shadow-lg min-w-[85px]">
-                  <div className="text-center">
-                    <div className="text-sm font-bold whitespace-nowrap">R950</div>
-                    <div className="text-xs line-through opacity-80 whitespace-nowrap">R1,200</div>
-                  </div>
-                </div>
-                
-                {/* Duration Badge */}
-                <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2">
-                  <Clock className="w-4 h-4" />
-                  <span className="text-sm font-medium">1 hour</span>
-                </div>
-
-                {/* Icon */}
-                <div className="absolute bottom-4 left-4 text-3xl z-10">
-                  🌮
-                </div>
-              </div>
-              
-              <CardContent className="p-6">
-                {/* Rating */}
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="flex items-center">
-                    {[...Array(5)].map((_, i) => (
-                      <Star 
-                        key={i}
-                        className={`w-4 h-4 ${i < 5 ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
-                      />
-                    ))}
-                  </div>
-                  <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">(5.0)</span>
-                </div>
-
-                <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
-                  Couples Package with Meals 🌮
-                </h3>
-                
-                <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
-                  Couples Package - 1hr @ Only R950 for 2 people
-                </p>
-
-                {/* Treatments Included */}
-                <div className="mb-4">
-                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
-                    1hr Massage Includes:
-                  </h4>
-                  <ul className="text-sm text-spa-beige-600 dark:text-spa-beige-400 space-y-1">
-                    <li>• Hotstones / Swedish Full Body Massage: 50-mins</li>
-                    <li>• Indian head massage: 10-mins</li>
-                    <li>• Back Exfoliation: 10mins</li>
-                  </ul>
-                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 mt-2 font-medium">
-                    Total Treatment time: 1 hour
-                  </p>
-                </div>
-
-                {/* Meals Included */}
-                <div className="mb-4 bg-spa-gold-50 dark:bg-spa-gold-900/20 rounded-lg p-3">
-                  <h4 className="font-playfair font-semibold text-sm text-spa-black dark:text-spa-white mb-2">
-                    Including 2 Meals:
-                  </h4>
-                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 font-medium">
-                    🌮 Chicken Wrap<br/>
-                    🍟 Chips
-                  </p>
-                </div>
-
-                {/* Pricing Info */}
-                <div className="mb-4 bg-spa-pink-50 dark:bg-spa-pink-900/20 rounded-lg p-3">
-                  <p className="text-sm text-spa-beige-700 dark:text-spa-beige-300 font-medium text-center">
-                    <span className="line-through text-spa-beige-500">Was R1,200</span> → <span className="text-spa-pink-600 dark:text-spa-pink-400 font-bold">Now R950</span>
-                  </p>
-                </div>
-
-                {/* Features */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    Save R250
-                  </span>
-                  <span className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium">
-                    For 2 People
-                  </span>
-                  <span className="px-3 py-1 bg-gradient-to-r from-spa-gold-100 to-spa-pink-100 dark:from-spa-gold-900/30 dark:to-spa-pink-900/30 text-spa-gold-600 dark:text-spa-gold-400 rounded-full text-xs font-medium">
-                    Meals Included
-                  </span>
-                </div>
-
-                {/* Booking Button */}
-                <Button 
-                  asChild
-                  className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
-                >
-                  <Link 
-                    href="https://wa.me/27617747378?text=Hi! I'm interested in the Couples Package with Meals (R950 for 2 people). It includes 1hr massage plus 2 meals with Chicken Wrap and Chips. When is your next availability?"
-                    target="_blank"
-                    className="flex items-center justify-center gap-2"
-                  >
-                    <MessageCircle className="w-5 h-5" />
-                    Book Couples Package
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
             {/* Come Relax - Call to Action */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-beige-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
-                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
-                  <Image
-                    src="/massage.jpeg"
-                    alt="Come Relax at Style and Beyouti Spa"
-                    fill
-                    quality={100}
-                    className="object-contain group-hover:scale-105 transition-transform duration-500"
-                  />
+              <div className="relative h-96 overflow-hidden bg-gradient-to-br from-spa-beige-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative w-full h-full p-1">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src="/ximg3.jpeg"
+                      alt="Facials at Style and Beyouti Spa"
+                      fill
+                      quality={100}
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
                 
@@ -1091,15 +970,18 @@ export default function HomePage() {
 
             {/* Treat Yourself Package */}
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
-              <div className="relative h-80 overflow-hidden p-4 bg-gradient-to-br from-spa-pink-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
-                <div className="relative h-full w-full rounded-xl overflow-hidden shadow-inner">
-                  <Image
-                    src="/dayspa4.jpeg"
-                    alt="Treat Yourself Package"
-                    fill
-                    quality={100}
-                    className="object-contain group-hover:scale-105 transition-transform duration-500"
-                  />
+              <div className="relative h-96 overflow-hidden bg-gradient-to-br from-spa-pink-50 to-spa-gold-50 dark:from-slate-700 dark:to-slate-800">
+                <div className="relative w-full h-full p-1">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src="/ximg.jpeg"
+                      alt="Treat Yourself Package"
+                      fill
+                      quality={100}
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
                 
