@@ -2634,7 +2634,7 @@ export default function HomePage() {
 
               <div className="relative h-44 rounded-2xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300">
                 <Image
-                  src="/dayspa2.jpeg"
+                  src="/facial.jpeg"
                   alt="Facial treatment setup"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
