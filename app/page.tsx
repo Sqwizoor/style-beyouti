@@ -94,8 +94,8 @@ export default function HomePage() {
             <div className="relative max-w-4xl mx-auto mb-16 rounded-2xl overflow-hidden shadow-2xl">
               <div className="relative aspect-video">
                 <Image
-                  src="/ximg5.jpeg"
-                  alt="Luxury Spa Experience"
+                  src="/tim7.jpeg"
+                  alt="Special Occasions and Events"
                   fill
                   quality={100}
                   className="object-cover w-full h-full rounded-2xl"
@@ -576,12 +576,12 @@ export default function HomePage() {
                 <div className="relative w-full h-full p-1">
                   <div className="relative w-full h-full rounded-lg overflow-hidden">
                     <Image
-                      src="/ximg4.jpeg"
+                      src="/couples-love.jpeg"
                       alt="Couples Deluxe Love Package"
                       fill
                       quality={100}
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
-                      style={{ objectFit: 'cover' }}
+                      className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-500"
+                      style={{ objectFit: 'contain' }}
                     />
                   </div>
                 </div>

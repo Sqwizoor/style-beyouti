@@ -18,8 +18,8 @@ const galleryCategories = [
     title: "Massage Therapy",
     description: "Professional massage treatments in peaceful settings",
     images: [
-      { src: "/spa1.jpeg", alt: "Professional massage therapy session" },
-      { src: "/dayspa2.jpeg", alt: "Relaxing spa environment" },
+      { src: "/tim3.jpeg", alt: "Professional massage therapy session" },
+      { src: "/tim2.jpeg", alt: "Relaxing spa environment" },
       { src: "/dayspa3.jpeg", alt: "Therapeutic massage treatment" },
     ],
     badge: "Relaxation"
@@ -28,9 +28,7 @@ const galleryCategories = [
     title: "Facial Treatments",
     description: "Luxury facial and skincare services",
     images: [
-      { src: "/dayspa4.jpeg", alt: "Luxury facial treatment" },
-      { src: "/dayspa5.jpeg", alt: "Skincare therapy session" },
-      { src: "/dayspa6.jpeg", alt: "Professional facial care" },
+      { src: "/facials.jpeg", alt: "Luxury facial treatment" }
     ],
     badge: "Beauty"
   },
@@ -44,23 +42,14 @@ const galleryCategories = [
     ],
     badge: "Ambience"
   },
-  {
-    title: "Wellness Moments",
-    description: "Capturing the essence of relaxation and rejuvenation",
-    images: [
-      { src: "/outdoor.jpeg", alt: "Outdoor relaxation space" },
-      { src: "/bed.jpeg", alt: "Comfortable treatment area" },
-      { src: "/citing-room.jpeg", alt: "Peaceful meditation space" },
-    ],
-    badge: "Wellness"
-  }
+ 
 ]
 
 const featuredImages = [
   { src: "/day-spa.jpeg", alt: "Main spa treatment room", title: "Our Signature Treatment Space", category: "Featured" },
-  { src: "/spa1.jpeg", alt: "Professional massage therapy", title: "Expert Massage Therapy", category: "Massage" },
-  { src: "/dayspa4.jpeg", alt: "Luxury facial treatment", title: "Premium Facial Care", category: "Facials" },
-  { src: "/pool.jpeg", alt: "Relaxation pool area", title: "Tranquil Pool Setting", category: "Ambience" },
+  { src: "/mass2.jpeg", alt: "Professional massage therapy", title: "Expert Massage Therapy", category: "Massage" },
+  { src: "/facial.jpeg", alt: "Luxury facial treatment", title: "Premium Facial Care", category: "Facials" },
+  { src: "/ximg8.jpeg", alt: "Relaxation pool area", title: "Tranquil Pool Setting", category: "Ambience" },
 ]
 
 export default function GalleryPage() {
@@ -70,9 +59,7 @@ export default function GalleryPage() {
       <section className="relative py-20 bg-gradient-to-r from-spa-pink-50 to-spa-beige-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fadeIn">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-spa-pink-400 to-spa-gold-400 rounded-full shadow-2xl mb-8 animate-float">
-              <Eye className="w-10 h-10 text-spa-white" />
-            </div>
+            
             
             <h1 className="font-playfair font-bold text-5xl sm:text-6xl text-spa-black mb-6">
               Spa Gallery

@@ -78,7 +78,7 @@ export default function AboutPage() {
             <div className="relative animate-slideIn">
               <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/kids4.jpeg"
+                  src="/tim.jpeg"
                   alt="Spa treatment environment"
                   fill
                   className="object-cover"

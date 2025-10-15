@@ -25,31 +25,28 @@ export default function KidsPage() {
     {
       title: "Mini Me Massage",
       description: "A gentle, fun introduction to massage therapy designed specifically for children aged 6-12. Using child-safe techniques and fun storytelling to create a magical relaxation experience.",
-      price: "R180",
       duration: "30 min",
       rating: 4.9,
       features: ["Gentle Techniques", "Storytelling", "Child-Safe Products", "Fun & Interactive"],
       icon: "🧚‍♀️",
-      image: "/dayspa4.jpeg",
+      image: "/xnew-kids.jpeg",
       ageRange: "6-12 years",
       whatsappMessage: "Hi! I'd like to book a Mini Me Massage for my child (30 min - R180). When is your next availability?"
     },
     {
       title: "Princess/Prince Pamper Package",
       description: "The ultimate royal treatment! Includes gentle facial cleansing, fun nail painting, mini hand massage, and a special crown or certificate. Perfect for birthdays or special occasions!",
-      price: "R250",
       duration: "45 min",
       rating: 4.8,
       features: ["Gentle Facial", "Nail Painting", "Hand Massage", "Special Crown", "Certificate"],
       icon: "👑",
-      image: "/spa1.jpeg",
+      image: "/new-kids4.jpeg",
       ageRange: "5-14 years",
       whatsappMessage: "Hi! I'd like to book the Princess/Prince Pamper Package for my child (45 min - R250). When is your next availability?"
     },
     {
       title: "Teen Glow Session",
       description: "Specially designed for teenagers dealing with skin changes. Includes deep cleansing facial, spot treatment, and skincare education. Helps build confidence and healthy habits.",
-      price: "R320",
       duration: "60 min",
       rating: 4.7,
       features: ["Deep Cleansing", "Spot Treatment", "Skincare Education", "Confidence Building"],
@@ -61,7 +58,6 @@ export default function KidsPage() {
     {
       title: "Family Bonding Session",
       description: "Perfect for parent and child bonding! Enjoy side-by-side relaxation treatments. Includes matching mini massages and quality time together in a peaceful environment.",
-      price: "R450",
       duration: "45 min",
       rating: 5.0,
       features: ["Parent & Child", "Side-by-Side Treatment", "Bonding Experience", "Quality Time"],
@@ -219,14 +215,14 @@ export default function KidsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {kidsServices.map((service, index) => (
               <Card 
                 key={index}
-                className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 animate-fadeIn hover:scale-105 hover:-translate-y-2"
+                className="group hover:shadow-xl transition-all duration-500 border-0 shadow-md overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 animate-fadeIn hover:scale-105 hover:-translate-y-1"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -234,11 +230,6 @@ export default function KidsPage() {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-spa-black/50 to-transparent"></div>
-                  
-                  {/* Price Badge */}
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 text-white px-3 py-1 rounded-full font-bold shadow-lg">
-                    {service.price}
-                  </div>
                   
                   {/* Duration Badge */}
                   <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2">
@@ -257,34 +248,34 @@ export default function KidsPage() {
                   </div>
                 </div>
                 
-                <CardContent className="p-6">
+                <CardContent className="p-4">
                   {/* Rating */}
-                  <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center gap-1 mb-2">
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
                         <Star 
                           key={i}
-                          className={`w-4 h-4 ${i < Math.floor(service.rating) ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+                          className={`w-3 h-3 ${i < Math.floor(service.rating) ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
                         />
                       ))}
                     </div>
-                    <span className="text-sm text-spa-beige-600 dark:text-spa-beige-400">({service.rating})</span>
+                    <span className="text-xs text-spa-beige-600 dark:text-spa-beige-400">({service.rating})</span>
                   </div>
 
-                  <h3 className="font-playfair font-semibold text-2xl text-spa-black dark:text-spa-white mb-3 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
+                  <h3 className="font-playfair font-semibold text-lg text-spa-black dark:text-spa-white mb-2 group-hover:text-spa-pink-600 dark:group-hover:text-spa-pink-400 transition-colors">
                     {service.title}
                   </h3>
                   
-                  <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4 leading-relaxed">
+                  <p className="font-poppins text-sm text-spa-beige-600 dark:text-spa-beige-400 mb-3 line-clamp-2">
                     {service.description}
                   </p>
 
                   {/* Features */}
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {service.features.map((feature, featureIndex) => (
+                  <div className="flex flex-wrap gap-1 mb-3">
+                    {service.features.slice(0, 2).map((feature, featureIndex) => (
                       <span 
                         key={featureIndex}
-                        className="px-3 py-1 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium"
+                        className="px-2 py-0.5 bg-gradient-to-r from-spa-pink-100 to-spa-gold-100 dark:from-spa-pink-900/30 dark:to-spa-gold-900/30 text-spa-pink-600 dark:text-spa-pink-400 rounded-full text-xs font-medium"
                       >
                         {feature}
                       </span>
@@ -294,15 +285,15 @@ export default function KidsPage() {
                   {/* Booking Button */}
                   <Button 
                     asChild
-                    className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105"
+                    className="w-full bg-gradient-to-r from-spa-pink-400 to-spa-gold-400 hover:from-spa-pink-500 hover:to-spa-gold-500 text-spa-white font-poppins font-medium rounded-full text-sm py-1 transition-all duration-300 hover:shadow-sm hover:scale-105"
                   >
                     <Link 
                       href={`https://wa.me/27617747378?text=${encodeURIComponent(service.whatsappMessage)}`}
-                      className="flex items-center justify-center gap-2"
+                      className="flex items-center justify-center gap-1"
                       target="_blank"
                     >
-                      <MessageCircle className="w-5 h-5" />
-                      Book via WhatsApp
+                      <MessageCircle className="w-4 h-4" />
+                      Book Now
                     </Link>
                   </Button>
                 </CardContent>

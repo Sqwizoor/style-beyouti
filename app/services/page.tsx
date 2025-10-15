@@ -16,28 +16,16 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-spa-beige-50 via-spa-pink-50 to-spa-gold-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-spa-pink-400 to-spa-gold-400 rounded-full shadow-lg mb-6">
-            <Sparkles className="w-8 h-8 text-spa-white" />
-          </div>
-          <h1 className="font-playfair font-bold text-4xl sm:text-5xl lg:text-6xl text-spa-black dark:text-spa-white mb-6">
-            Our Services & Packages
-          </h1>
-          <p className="font-lora text-xl text-spa-beige-700 dark:text-spa-beige-300 max-w-3xl mx-auto mb-8">
-            Discover our exclusive spa services and packages designed to give you exceptional value while experiencing our premium treatments
-          </p>
-        </div>
-      </section>
+    
 
       {/* Services Section - Using the Exclusive Deals & Packages content */}
       <section className="py-20 bg-gradient-to-br from-spa-beige-50 via-spa-pink-50 to-spa-gold-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-spa-pink-400 to-spa-gold-400 rounded-full shadow-lg mb-6">
+            {/* <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-spa-pink-400 to-spa-gold-400 rounded-full shadow-lg mb-6">
               <Sparkles className="w-8 h-8 text-spa-white" />
-            </div>
-            <h2 className="font-playfair font-bold text-4xl sm:text-5xl text-spa-black dark:text-spa-white mb-4">
+            </div> */}
+            <h2 className="font-playfair py-5 font-bold text-4xl sm:text-5xl text-spa-black dark:text-spa-white mb-4">
               Exclusive Deals & Packages
             </h2>
             <p className="font-lora text-xl text-spa-beige-700 dark:text-spa-beige-300 max-w-3xl mx-auto">
