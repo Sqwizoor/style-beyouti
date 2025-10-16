@@ -1,0 +1,6 @@
+export { ContactCtaSection } from './contact-cta-section'
+export { FeaturedServicesSection } from './featured-services-section'
+export { OpeningHoursSection } from './opening-hours-section'
+export { SpaPackagesSection } from './spa-packages-section'
+export { TestimonialsSection } from './testimonials-section'
+export { WelcomeSection } from './welcome-section'
