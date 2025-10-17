@@ -20,9 +20,15 @@ const galleryCategories = [
     items: [
       { src: "/kids-massage.jpeg", alt: "Kids spa treatments" },
       { src: "/kids11.jpeg", alt: "Princess spa package" },
+       { src: "/tim8.jpeg", alt: "Teen spadfd treatmdents" },
+       { src: "/hero9.jpeg", alt: "Teend spadfd treatmdents" },
       { src: "/kids7.jpeg", alt: "Teen spa treatments" },
+      { src: "/youth.jpeg", alt: "Teen spadfd treatments" },
+
       { src: "/kids9.jpeg", alt: "Family spa sessions" },
       { src: "/mass2.jpeg", alt: "Kids spa activities" },
+      { src: "/tim3.jpeg", alt: "Kids spa activities" },
+       { src: "/youth4.jpeg", alt: "Teen spadfd treatments" },
     ],
   },
   {

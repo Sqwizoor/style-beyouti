@@ -74,7 +74,7 @@ export default function MemorableEvents() {
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-beige-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-72 overflow-hidden">
                 <Image
-                  src="/dayspa2.jpeg"
+                  src="/bridal-showers.jpeg"
                   alt="Bridal shower spa treatments"
                   fill
                   quality={95}
@@ -123,7 +123,7 @@ export default function MemorableEvents() {
             <Card className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-b from-spa-white to-spa-gold-50 dark:from-slate-800 dark:to-slate-900 hover:scale-105 hover:-translate-y-2">
               <div className="relative h-72 overflow-hidden">
                 <Image
-                  src="/dayspa3.jpeg"
+                  src="/bridal-showers.jpeg"
                   alt="Baby shower spa celebrations"
                   fill
                   quality={95}

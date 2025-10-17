@@ -1,4 +1,4 @@
-import { Heart, Sparkles, Phone, Mail, MapPin, MessageCircle, Star } from "lucide-react"
+import { Heart, Sparkles, Phone, Mail, MapPin, MessageCircle, Star, Facebook, Instagram } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -23,6 +23,23 @@ export default function Footer() {
   const serviceAreas = [
     "Johannesburg South"
   ]
+
+  // --- NEW: Social Media Links Array ---
+  const socialLinks = [
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/p/Style-and-Beyouti-Zone-100063770191373/",
+      icon: Facebook,
+      color: "bg-blue-600 hover:bg-blue-700",
+    },
+    {
+      name: "Instagram",
+      href: "https://www.instagram.com/styleandbeyoutizone/",
+      icon: Instagram,
+      color: "bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 hover:opacity-90",
+    },
+  ]
+  // --- END NEW ---
 
   return (
     <footer className="bg-gradient-to-b from-spa-beige-50 to-spa-white dark:from-slate-900 dark:to-slate-800 border-t border-spa-pink-100 dark:border-spa-pink-800">
@@ -105,7 +122,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Info & Socials */}
           <div>
             <h3 className="font-playfair font-bold text-lg text-spa-black dark:text-spa-white mb-6">
               Get In Touch
@@ -146,6 +163,27 @@ export default function Footer() {
                   </Link>
                 </div>
               </div>
+              
+              {/* --- NEW: Social Media Icons --- */}
+              <div className="pt-2">
+                <p className="font-playfair font-bold text-lg text-spa-black dark:text-spa-white mb-3">
+                  Connect
+                </p>
+                <div className="flex space-x-4">
+                  {socialLinks.map((social) => (
+                    <Link
+                      key={social.name}
+                      href={social.href}
+                      target="_blank"
+                      className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg ${social.color}`}
+                      aria-label={`Follow us on ${social.name}`}
+                    >
+                      <social.icon className="w-5 h-5 text-white" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              {/* --- END NEW --- */}
             </div>
           </div>
         </div>
@@ -208,4 +246,3 @@ export default function Footer() {
     </footer>
   )
 }
-

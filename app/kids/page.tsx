@@ -29,7 +29,7 @@ export default function KidsPage() {
       rating: 4.9,
       features: ["Gentle Techniques", "Storytelling", "Child-Safe Products", "Fun & Interactive"],
       icon: "🧚‍♀️",
-      image: "/xnew-kids.jpeg",
+      image: "/mass2.jpeg",
       ageRange: "6-12 years",
       whatsappMessage: "Hi! I'd like to book a Mini Me Massage for my child (30 min - R180). When is your next availability?"
     },
@@ -372,62 +372,14 @@ export default function KidsPage() {
           </div>
 
           <div className="bg-gradient-to-br from-spa-white to-spa-pink-50 dark:from-slate-800 dark:to-slate-900 rounded-2xl shadow-xl p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-playfair font-bold text-2xl text-spa-black dark:text-spa-white mb-4">
-                  Before the Session
-                </h3>
-                <ul className="space-y-3 font-poppins text-spa-beige-600 dark:text-spa-beige-400">
-                  <li className="flex items-start">
-                    <Heart className="w-5 h-5 text-spa-pink-500 mr-3 mt-1 flex-shrink-0" />
-                    Parent/guardian must be present for all sessions
-                  </li>
-                  <li className="flex items-start">
-                    <Heart className="w-5 h-5 text-spa-pink-500 mr-3 mt-1 flex-shrink-0" />
-                    Please inform us of any allergies or sensitivities
-                  </li>
-                  <li className="flex items-start">
-                    <Heart className="w-5 h-5 text-spa-pink-500 mr-3 mt-1 flex-shrink-0" />
-                    Comfortable, easy-to-remove clothing recommended
-                  </li>
-                  <li className="flex items-start">
-                    <Heart className="w-5 h-5 text-spa-pink-500 mr-3 mt-1 flex-shrink-0" />
-                    Bring a favorite small toy or comfort item if needed
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-playfair font-bold text-2xl text-spa-black dark:text-spa-white mb-4">
-                  During the Session
-                </h3>
-                <ul className="space-y-3 font-poppins text-spa-beige-600 dark:text-spa-beige-400">
-                  <li className="flex items-start">
-                    <Sparkles className="w-5 h-5 text-spa-gold-500 mr-3 mt-1 flex-shrink-0" />
-                    Sessions can be stopped at any time if child is uncomfortable
-                  </li>
-                  <li className="flex items-start">
-                    <Sparkles className="w-5 h-5 text-spa-gold-500 mr-3 mt-1 flex-shrink-0" />
-                    We encourage questions and communication
-                  </li>
-                  <li className="flex items-start">
-                    <Sparkles className="w-5 h-5 text-spa-gold-500 mr-3 mt-1 flex-shrink-0" />
-                    Photos can be taken for special memories (with permission)
-                  </li>
-                  <li className="flex items-start">
-                    <Sparkles className="w-5 h-5 text-spa-gold-500 mr-3 mt-1 flex-shrink-0" />
-                    We adapt our approach to your child's comfort level
-                  </li>
-                </ul>
-              </div>
-            </div>
+           
 
             <div className="mt-8 p-6 bg-spa-pink-50 dark:bg-spa-pink-900/20 rounded-xl">
               <h4 className="font-playfair font-bold text-xl text-spa-black dark:text-spa-white mb-3">
                 Special Considerations
               </h4>
               <p className="font-poppins text-spa-beige-600 dark:text-spa-beige-400 mb-4">
-                Children under 12 must have a parent/guardian present at all times. For teenagers (13-17), 
+                For teenagers (13-17), 
                 parents are welcome to stay or can remain nearby while giving their teen some independence. 
                 All our staff are trained in child safety and creating age-appropriate experiences.
               </p>

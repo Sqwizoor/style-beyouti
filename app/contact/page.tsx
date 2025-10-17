@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Phone, MessageCircle, Mail, MapPin, Clock, Heart, Send } from 'lucide-react'
+import { Phone, MessageCircle, Mail, MapPin, Clock, Heart, Send, Facebook, Instagram } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -33,6 +33,26 @@ const contactMethods = [
     display: "Chat with us",
     color: "from-emerald-500 to-emerald-600",
     available: "Instant responses"
+  },
+  // --- NEW: FACEBOOK CONTACT METHOD ---
+  {
+    icon: Facebook, // Lucide Facebook Icon
+    title: "Follow on Facebook",
+    description: "Connect with us, view updates, and see special offers",
+    action: "https://www.facebook.com/p/Style-and-Beyouti-Zone-100063770191373/",
+    display: "@Style and Beyouti Zone",
+    color: "from-blue-600 to-blue-800",
+    available: "See our latest posts"
+  },
+  // --- NEW: INSTAGRAM CONTACT METHOD ---
+  {
+    icon: Instagram, // Lucide Instagram Icon
+    title: "Follow on Instagram",
+    description: "Browse our gallery for inspiration and wellness tips",
+    action: "https://www.instagram.com/styleandbeyoutizone/",
+    display: "@styleandbeyoutizone",
+    color: "from-purple-500 to-pink-500",
+    available: "Daily inspiration"
   }
 ]
 
@@ -99,12 +119,35 @@ export default function ContactPage() {
                   </Link>
                 </Button>
               </div>
+              
+              {/* --- NEW: Social Icons in Hero Section --- */}
+              <div className="mt-6 flex items-center space-x-4">
+                <span className="font-poppins text-spa-beige-700 font-medium">Follow Us:</span>
+                <Link 
+                  href="https://www.facebook.com/p/Style-and-Beyouti-Zone-100063770191373/" 
+                  target="_blank" 
+                  className="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg"
+                  aria-label="Follow us on Facebook"
+                >
+                  <Facebook className="w-5 h-5 text-white" />
+                </Link>
+                <Link 
+                  href="https://www.instagram.com/styleandbeyoutizone/" 
+                  target="_blank" 
+                  className="w-10 h-10 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 hover:opacity-90 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg"
+                  aria-label="Follow us on Instagram"
+                >
+                  <Instagram className="w-5 h-5 text-white" />
+                </Link>
+              </div>
+              {/* --- END NEW --- */}
+
             </div>
             
             <div className="relative animate-slideIn">
               <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/dayspa6.jpeg"
+                  src="/imgx9.jpeg"
                   alt="Contact us for spa services"
                   fill
                   className="object-cover"
@@ -126,14 +169,15 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-playfair font-bold text-4xl sm:text-5xl text-spa-black mb-4">
-              How to Reach Us
-            </h2>
-            <p className="font-lora text-xl text-spa-beige-700 max-w-2xl mx-auto">
-              Choose your preferred way to connect with us and book your perfect spa experience
-            </p>
+              How to Reach Us & Follow Our Journey
+            </h2> {/* Updated Title */}
+            <p className="font-lora text-xl text-spa-beige-700 max-w-3xl mx-auto">
+              Choose your preferred way to connect with us and book your perfect spa experience, 
+              or follow us on social media for exclusive content and offers.
+            </p> {/* Updated Description */}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> {/* Updated to lg:grid-cols-4 for 4 cards */}
             {contactMethods.map((method, index) => (
               <Card 
                 key={index}
@@ -165,7 +209,7 @@ export default function ContactPage() {
                     className={`w-full bg-gradient-to-r ${method.color} hover:shadow-lg text-white font-poppins font-medium rounded-full transition-all duration-300`}
                   >
                     <Link href={method.action} target={method.action.startsWith('http') ? '_blank' : undefined}>
-                      Contact Now
+                      {method.title.includes('Follow') ? 'Go to Page' : 'Contact Now'}
                     </Link>
                   </Button>
                 </CardContent>
@@ -174,7 +218,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
+      
       {/* Contact Form */}
       <section className="py-20 bg-gradient-to-b from-spa-beige-50 to-spa-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
